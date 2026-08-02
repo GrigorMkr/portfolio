@@ -1,36 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label=">3>B8? @83>@ :@BGO=">
-  <defs>
-    <linearGradient id="gmStroke" x1="8" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E8FF6A"/>
-      <stop offset="1" stop-color="#F0B429"/>
-    </linearGradient>
-  </defs>
-  <!-- Outer frame: viewport / craft bench -->
-  <path
-    d="M10 14.5 28 6.5h20.5L54 18v31.5L36.5 57.5H16L10 45.5Z"
-    stroke="url(#gmStroke)"
-    stroke-width="2.2"
-    stroke-linejoin="round"
-  />
-  <!-- Inner cut: G bowl + M peaks (#@0; / 8=B5@D59A) -->
-  <path
-    d="M22 40.5V24.2c0-1.2.7-2.2 1.8-2.6l7.4-2.6c.9-.3 1.9.2 2.3 1.1l1.3 3.1c.3.8 1.1 1.3 2 1.2l4.8-.5c1.2-.1 2.2.8 2.2 2v14.6"
-    stroke="#F4F0E4"
-    stroke-width="2.4"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M22 33.2h10.8c1.1 0 2 .8 2.1 1.9l.3 3.4"
-    stroke="#E8FF6A"
-    stroke-width="2.4"
-    stroke-linecap="round"
-  />
-  <path
-    d="m34.2 40.5 4.2-9.4 4.4 9.4"
-    stroke="#F4F0E4"
-    stroke-width="2.4"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="GM">
+  <rect width="128" height="128" rx="28" fill="#121812"/>
+  <rect x="7" y="7" width="114" height="114" rx="22" fill="none" stroke="#E8FF6A" stroke-width="4"/>
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, Helvetica, sans-serif"
+    font-size="52"
+    font-weight="800"
+    letter-spacing="-2"
+    fill="#F4F0E4"
+  >GM</text>
+  <rect x="34" y="96" width="60" height="6" rx="3" fill="#F0B429"/>
 </svg>

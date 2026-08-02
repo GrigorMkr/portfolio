@@ -271,12 +271,22 @@ a {
 
 .hero__panel {
   position: relative;
-  padding: 1.35rem 1.4rem 1.5rem;
+  padding: 1.1rem 1.15rem 1.35rem;
   border: 1px solid var(--line);
   background:
     linear-gradient(160deg, rgba(232, 255, 106, 0.07), transparent 42%),
     var(--panel);
   backdrop-filter: blur(8px);
+}
+
+.hero__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  filter: saturate(1.05) contrast(1.02);
 }
 
 .hero__panel-label {
@@ -296,22 +306,9 @@ a {
 }
 
 .hero__panel-note {
-  margin: 0.65rem 0 1.1rem;
+  margin: 0.65rem 0 0;
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.hero__stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.85rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(244, 240, 228, 0.72);
 }
 
 [data-rise] {
@@ -327,13 +324,136 @@ a {
 .hero__cta { animation-delay: 0.5s; }
 .hero__panel { animation-delay: 0.58s; }
 
-.about {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(12rem, 0.7fr);
-  gap: 2rem;
-  align-items: end;
-  padding: 1.5rem var(--pad) 3rem;
+.about,
+.path,
+.certs,
+.contact {
+  padding: 2.5rem var(--pad) 3rem;
   border-top: 1px solid var(--line);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 0.75fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.about__code {
+  margin: 1.25rem 0 0;
+  padding: 1.1rem 1.2rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.28);
+  color: #d7e0cf;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.about__code code {
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+.about__facts h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.about__facts h3 + ul {
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.about__facts li {
+  margin: 0.35rem 0;
+}
+
+.about__facts a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(232, 255, 106, 0.35);
+}
+
+.certs__head {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.certs__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cert {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  background: rgba(18, 24, 18, 0.55);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.cert:hover {
+  border-color: rgba(232, 255, 106, 0.4);
+  transform: translateY(-3px);
+}
+
+.cert img {
+  width: 100%;
+  aspect-ratio: 1.414 / 1;
+  object-fit: cover;
+  object-position: top center;
+  background: #0a0e0a;
+}
+
+.cert span {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.cert--wide {
+  grid-column: 1 / -1;
+}
+
+.path .timeline-scale {
+  margin-top: 1.4rem;
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.contact__item {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--line);
+  background: rgba(18, 24, 18, 0.55);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.contact__item:hover {
+  border-color: rgba(232, 255, 106, 0.45);
+  transform: translateY(-2px);
+}
+
+.contact__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contact__value {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .eyebrow {
@@ -354,7 +474,7 @@ a {
 
 .section-text {
   margin: 0;
-  max-width: 38rem;
+  max-width: 40rem;
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -611,10 +731,16 @@ a {
 
 @media (max-width: 960px) {
   .hero,
-  .about,
+  .about__grid,
   .project,
-  .project--flip {
+  .project--flip,
+  .contact__row,
+  .certs__grid {
     grid-template-columns: 1fr;
+  }
+
+  .cert--wide {
+    grid-column: auto;
   }
 
   .project--flip .project__meta,
@@ -628,7 +754,12 @@ a {
   }
 
   .hero__panel {
-    max-width: 28rem;
+    max-width: 22rem;
+  }
+
+  .nav {
+    gap: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .work__rail {

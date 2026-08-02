@@ -6,7 +6,7 @@
     <title>Григор Мкртчян — Frontend</title>
     <meta
       name="description"
-      content="Портфолио фронтенд-разработчика Григора Мкртчяна: от вёрстки до продуктовых порталов."
+      content="Frontend-разработчик из Уфы. React, TypeScript, Vite. Портфолио, сертификаты HTML Academy, контакты."
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,16 +26,17 @@
 
     <header class="top">
       <a class="logo" href="#top" aria-label="Григор Мкртчян — наверх">
-        <img class="logo__mark" src="./logo.svg" width="36" height="36" alt="" />
+        <img class="logo__mark" src="./logo.svg" width="40" height="40" alt="GM" />
         <span class="logo__word">
           <span class="logo__name">Григор Мкртчян</span>
           <span class="logo__role">Frontend</span>
         </span>
       </a>
       <nav class="nav" aria-label="Разделы">
+        <a href="#about">Обо мне</a>
+        <a href="#certs">Сертификаты</a>
         <a href="#work">Работы</a>
-        <a href="#about">Путь</a>
-        <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#contact">Контакты</a>
       </nav>
     </header>
 
@@ -43,47 +44,106 @@
       <section class="hero">
         <div class="hero__copy">
           <div class="hero__logo-stage" data-rise>
-            <img class="hero__logo" src="./logo.svg" width="120" height="120" alt="Логотип GM" />
-            <span class="hero__logo-caption">знак GM · кадр + вершины</span>
+            <img class="hero__logo" src="./logo.svg" width="112" height="112" alt="Логотип GM" />
+            <span class="hero__logo-caption">монограмма GM</span>
           </div>
-          <p class="hero__kicker" data-rise>Уфа · Frontend · 2025–2026</p>
+          <p class="hero__kicker" data-rise>Уфа · Frontend · Open to work</p>
           <h1 class="hero__brand" data-rise>
             <span>Григор</span>
             <span class="hero__brand-accent">Мкртчян</span>
           </h1>
           <p class="hero__lead" data-rise>
-            Собираю интерфейсы, которые ощущаются как место: от учебной вёрстки до живых порталов
-            с картой, кабинетом и афишей.
+            Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
           </p>
           <div class="hero__cta" data-rise>
             <a class="btn btn--primary" href="#work">Смотреть работы</a>
-            <a class="btn btn--ghost" href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn--ghost" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram</a>
           </div>
         </div>
 
-        <aside class="hero__panel" data-rise aria-label="Кратко">
+        <aside class="hero__panel" data-rise>
+          <img class="hero__photo" src="./assets/grigor.png" width="320" height="320" alt="Фото Григора Мкртчяна" />
           <p class="hero__panel-label">Сейчас</p>
-          <p class="hero__panel-value">8 проектов в ленте</p>
-          <p class="hero__panel-note">Хронология по дате репозитория — от Sedona до Rock Ufa.</p>
-          <ul class="hero__stack">
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Vite</li>
-          </ul>
+          <p class="hero__panel-value">Open to work</p>
+          <p class="hero__panel-note">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
         </aside>
       </section>
 
       <section class="about" id="about">
-        <div class="about__inner">
-          <p class="eyebrow">Путь</p>
-          <h2 class="section-title">По мере разработки</h2>
+        <div class="about__grid">
+          <div>
+            <p class="eyebrow">Обо мне</p>
+            <h2 class="section-title">Кто я</h2>
+            <p class="section-text">
+              Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
+              клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
+            </p>
+            <pre class="about__code" tabindex="0"><code>const grigor = {
+  name: "Григор Мкртчян",
+  role: "Frontend Developer",
+  age: 37,
+  city: "Уфа, Россия",
+  stack: ["JavaScript", "TypeScript", "React"],
+  focus: ["Clean UI", "Fast UX", "Scalable frontend"],
+  status: "Open to work"
+};</code></pre>
+          </div>
+          <div class="about__facts">
+            <h3>Стек</h3>
+            <ul>
+              <li>TypeScript · React · Vite</li>
+              <li>React Router · Redux Toolkit</li>
+              <li>Axios · Leaflet</li>
+              <li>HTML / CSS · JavaScript</li>
+            </ul>
+            <h3>Ссылки</h3>
+            <ul>
+              <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer">Резюме HTML Academy</a></li>
+              <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="certs" id="certs">
+        <div class="certs__head">
+          <p class="eyebrow">HTML Academy</p>
+          <h2 class="section-title">Сертификаты</h2>
           <p class="section-text">
-            Сначала сетка и адаптив, потом состояние и API, затем целые продуктовые поверхности.
-            Ниже — та же лестница, только в картинках.
+            Пять сертификатов профессии фронтенд-разработчика — от вёрстки до React.
           </p>
         </div>
+        <div class="certs__grid">
+          <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/certificates/html-css-professional-layout.png" alt="Сертификат HTML и CSS" loading="lazy" />
+            <span>HTML и CSS. Профессиональная вёрстка сайтов</span>
+          </a>
+          <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="Сертификат JavaScript интерфейсы" loading="lazy" />
+            <span>JavaScript. Профессиональная разработка веб-интерфейсов</span>
+          </a>
+          <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/certificates/javascript-client-app-architecture.png" alt="Сертификат архитектура JS" loading="lazy" />
+            <span>JavaScript. Архитектура клиентских приложений</span>
+          </a>
+          <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/certificates/react-complex-client-apps.png" alt="Сертификат React" loading="lazy" />
+            <span>React. Разработка сложных клиентских приложений</span>
+          </a>
+          <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/certificates/frontend-developer-profession.png" alt="Сертификат профессии фронтенд" loading="lazy" />
+            <span>Профессия «Фронтенд-разработчик»</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="path" id="path">
+        <p class="eyebrow">Путь</p>
+        <h2 class="section-title">По мере разработки</h2>
+        <p class="section-text">
+          Восемь проектов ниже — в хронологии создания репозиториев. От Sedona до Rock Ufa.
+        </p>
         <div class="timeline-scale" aria-hidden="true">
           <span>2025</span>
           <span class="timeline-scale__line"></span>
@@ -206,20 +266,40 @@
           </a>
         </article>
       </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">Связь</p>
+        <h2 class="section-title">Контакты</h2>
+        <p class="section-text">Можно написать в Telegram или позвонить.</p>
+        <div class="contact__row">
+          <a class="contact__item" href="tel:+79871484032">
+            <span class="contact__label">Телефон</span>
+            <span class="contact__value">+7 987 148-40-32</span>
+          </a>
+          <a class="contact__item" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">
+            <span class="contact__label">Telegram</span>
+            <span class="contact__value">@Grigormk</span>
+          </a>
+          <a class="contact__item" href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">GrigorMkr</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__brand-row">
-        <img src="./logo.svg" width="48" height="48" alt="" />
+        <img src="./logo.svg" width="48" height="48" alt="GM" />
         <div>
           <p class="footer__brand">Григор Мкртчян</p>
           <p class="footer__note">Frontend developer · Уфа</p>
         </div>
       </div>
       <div class="footer__links">
-        <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="tel:+79871484032">+7 987 148-40-32</a>
+        <a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram</a>
         <a href="#work">Работы</a>
-        <a href="#top">Наверх</a>
       </div>
     </footer>
 
