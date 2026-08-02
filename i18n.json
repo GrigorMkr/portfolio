@@ -62,7 +62,8 @@
     "open": "открыть",
     "close": "закрыть",
     "stampTop": "FRONTEND · UFA",
-    "stampBottom": "ГРИГОР МКРТЧЯН"
+    "stampBottom": "ГРИГОР МКРТЧЯН",
+    "stampRing": "FRONTEND · UFA · ГРИГОР МКРТЧЯН · "
   },
   "en": {
     "htmlLang": "en",
@@ -127,7 +128,8 @@
     "open": "open",
     "close": "close",
     "stampTop": "FRONTEND · UFA",
-    "stampBottom": "GRIGOR MKRTCHYAN"
+    "stampBottom": "GRIGOR MKRTCHYAN",
+    "stampRing": "FRONTEND · UFA · GRIGOR MKRTCHYAN · "
   },
   "hy": {
     "htmlLang": "hy",
@@ -192,6 +194,7 @@
     "open": "բացել",
     "close": "փակել",
     "stampTop": "FRONTEND · UFA",
-    "stampBottom": "ԳՐԻԳՈՐ ՄԿՐՏՉՅԱՆ"
+    "stampBottom": "ԳՐԻԳՈՐ ՄԿՐՏՉՅԱՆ",
+    "stampRing": "FRONTEND · UFA · ԳՐԻԳՈՐ ՄԿՐՏՉՅԱՆ · "
   }
 }

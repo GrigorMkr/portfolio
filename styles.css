@@ -7,7 +7,7 @@
   --gold-soft: rgba(201, 169, 106, 0.35);
   --line: rgba(243, 238, 228, 0.1);
   --panel: rgba(22, 20, 17, 0.78);
-  --font-display: "Cormorant Garamond", "Noto Sans Armenian", Georgia, serif;
+  --font-display: "Loos Condensed", "Loos Normal", "Noto Sans Armenian", sans-serif;
   --font-body: "Manrope", "Noto Sans Armenian", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --pad: clamp(1.25rem, 4vw, 3.75rem);
@@ -60,7 +60,7 @@ a {
 :lang(hy) .section-title,
 :lang(hy) .footer__brand,
 :lang(hy) .logo__name {
-  font-family: "Noto Sans Armenian", "Cormorant Garamond", sans-serif;
+  font-family: "Noto Sans Armenian", "Loos Condensed", sans-serif;
   letter-spacing: 0;
 }
 
@@ -127,9 +127,25 @@ a {
 /* ——— Stamp ——— */
 .stamp {
   position: relative;
-  display: grid;
-  place-items: center;
+  display: block;
   flex-shrink: 0;
+  width: min(220px, 58vw);
+  height: min(220px, 58vw);
+}
+
+.stamp--sm {
+  width: 52px;
+  height: 52px;
+}
+
+.stamp--lg {
+  width: min(240px, 62vw);
+  height: min(240px, 62vw);
+}
+
+.stamp__layer {
+  position: absolute;
+  inset: 0;
 }
 
 .stamp__svg {
@@ -139,26 +155,37 @@ a {
   overflow: visible;
 }
 
-.stamp__gm {
-  fill: var(--ink);
-  font-family: var(--font-display);
-  letter-spacing: 0.04em;
-}
-
-.stamp__arc {
-  font-family: var(--font-body);
-  text-transform: uppercase;
+.stamp__base {
+  z-index: 0;
 }
 
 .stamp__spin {
-  transform-origin: center;
-  transform-box: view-box;
-  animation: stampSpin 22s linear infinite;
+  z-index: 1;
+  animation: stampSpin 14s linear infinite;
+  will-change: transform;
+  transform-origin: 50% 50%;
+}
+
+.stamp__core {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.stamp__gm {
+  fill: var(--ink);
+  font-family: "Loos Normal", var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.stamp__arc {
+  font-family: "Manrope", var(--font-body);
+  text-transform: uppercase;
 }
 
 .stamp__glow {
   position: absolute;
   inset: -18%;
+  z-index: 0;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(201, 169, 106, 0.28), transparent 68%);
   animation: sealPulse 4.5s ease-in-out infinite;
@@ -166,6 +193,9 @@ a {
 }
 
 @keyframes stampSpin {
+  from {
+    transform: rotate(0deg);
+  }
   to {
     transform: rotate(360deg);
   }
@@ -181,16 +211,6 @@ a {
     opacity: 0.9;
     transform: scale(1.05);
   }
-}
-
-.stamp--sm {
-  width: 52px;
-  height: 52px;
-}
-
-.stamp--lg {
-  width: min(220px, 58vw);
-  height: min(220px, 58vw);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -337,18 +357,18 @@ a {
 .hero__brand {
   margin: 0;
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 900;
   font-size: clamp(3.2rem, 9vw, 6.4rem);
   line-height: 0.92;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
 }
 
 .hero__brand-accent {
   color: var(--gold);
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 html[lang="en"] .hero__brand {
