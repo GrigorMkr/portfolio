@@ -622,17 +622,6 @@ html[lang="en"] .hero__brand {
   display: grid;
   gap: 1.5rem;
   margin-bottom: 1.75rem;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-}
-
-@media (min-width: 800px) {
-  .about__intro {
-    grid-template-columns: auto 1fr;
-    text-align: left;
-    justify-items: start;
-  }
 }
 
 .about__person {
