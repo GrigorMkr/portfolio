@@ -1,15 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" role="img" aria-label="GM">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="GM">
   <defs>
-    <path id="ringPath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+    <path id="arcTop" d="M38,112 A66,66 0 0,1 162,112"/>
+    <path id="arcBottom" d="M162,112 A66,66 0 0,1 38,112"/>
+    <radialGradient id="stampFill" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#1a2216"/>
+      <stop offset="100%" stop-color="#0e140e"/>
+    </radialGradient>
   </defs>
-  <circle cx="100" cy="100" r="96" fill="#141a14"/>
-  <circle cx="100" cy="100" r="90" fill="none" stroke="#E8FF6A" stroke-width="3.5"/>
-  <circle cx="100" cy="100" r="82" fill="none" stroke="#E8FF6A" stroke-width="1.5" stroke-dasharray="3 5"/>
-  <circle cx="100" cy="100" r="58" fill="none" stroke="#F0B429" stroke-width="2"/>
-  <text fill="#F4F0E4" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3.2">
-    <textPath href="#ringPath" xlink:href="#ringPath" startOffset="0%">FRONTEND · UFA · GRIGOR · MKRTCHYAN · </textPath>
+  <circle cx="100" cy="100" r="98" fill="url(#stampFill)"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#E8FF6A" stroke-width="2.5"/>
+  <g class="stamp__spin" transform-origin="100 100">
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#E8FF6A" stroke-width="1.25" stroke-dasharray="2.5 5"/>
+  </g>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#F0B429" stroke-width="1.8"/>
+  <text class="stamp__arc-text stamp__arc-text--top" fill="#F4F0E4" font-size="11" font-weight="700" letter-spacing="1.5">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">FRONTEND · UFA</textPath>
   </text>
-  <text x="100" y="112" text-anchor="middle" font-family="Segoe UI, Arial Black, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2" fill="#E8FF6A">GM</text>
-  <circle cx="100" cy="48" r="2.2" fill="#F0B429"/>
-  <circle cx="100" cy="152" r="2.2" fill="#F0B429"/>
+  <text class="stamp__arc-text stamp__arc-text--bottom" fill="#F4F0E4" font-size="10.5" font-weight="700" letter-spacing="0.8">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">GRIGOR MKRTCHYAN</textPath>
+  </text>
+  <text x="100" y="112" text-anchor="middle" fill="#E8FF6A" font-size="42" font-weight="800" font-family="Noto Sans, Arial, sans-serif" letter-spacing="-1.5">GM</text>
 </svg>

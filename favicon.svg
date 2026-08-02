@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="96" fill="#141a14"/>
-  <circle cx="100" cy="100" r="90" fill="none" stroke="#E8FF6A" stroke-width="3.5"/>
-  <circle cx="100" cy="100" r="82" fill="none" stroke="#E8FF6A" stroke-width="1.5" stroke-dasharray="3 5"/>
-  <circle cx="100" cy="100" r="58" fill="none" stroke="#F0B429" stroke-width="2"/>
-  <text x="100" y="112" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2" fill="#E8FF6A">GM</text>
+  <circle cx="100" cy="100" r="98" fill="#121812"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#E8FF6A" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#E8FF6A" stroke-width="1.25" stroke-dasharray="2.5 5"/>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#F0B429" stroke-width="1.8"/>
+  <text x="100" y="112" text-anchor="middle" fill="#E8FF6A" font-size="42" font-weight="800" font-family="Noto Sans, Arial, sans-serif" letter-spacing="-1.5">GM</text>
 </svg>
