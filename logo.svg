@@ -1,13 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="GM">
-  <circle cx="100" cy="100" r="97" fill="#ff4f1a"/>
+  <circle cx="100" cy="100" r="98" fill="#161513"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#cfc6b8" stroke-width="1.4"/>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#cfc6b8" stroke-width="1.2"/>
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="14s" repeatCount="indefinite"/>
-    <circle cx="100" cy="100" r="78" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="2.5 4.5" opacity="0.85"/>
-    <path id="logoRing" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" fill="none"/>
-    <text fill="#ffffff" font-family="Manrope, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.6">
-      <textPath href="#logoRing" startOffset="0%">FRONTEND · UFA · ГРИГОР МКРТЧЯН · </textPath>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="28s" repeatCount="indefinite"/>
+    <path id="logoTop" d="M30,108 A72,72 0 0,0 170,108" fill="none"/>
+    <path id="logoBot" d="M170,108 A72,72 0 0,0 30,108" fill="none"/>
+    <text fill="#f4f0e8" font-family="Loos Condensed, sans-serif" font-size="14" font-weight="700" letter-spacing="3.2">
+      <textPath href="#logoTop" startOffset="50%" text-anchor="middle">МКРТЧЯН</textPath>
+    </text>
+    <text fill="#f4f0e8" font-family="Loos Condensed, sans-serif" font-size="13" font-weight="700" letter-spacing="4">
+      <textPath href="#logoBot" startOffset="50%" text-anchor="middle">FRONTEND</textPath>
     </text>
   </g>
-  <circle cx="100" cy="100" r="48" fill="none" stroke="#ffffff" stroke-width="1.8"/>
-  <text x="100" y="112" text-anchor="middle" fill="#ffffff" font-family="Loos Normal, sans-serif" font-size="42" font-weight="700">GM</text>
+  <text x="100" y="116" text-anchor="middle" fill="#f4f0e8" font-family="Loos Normal, sans-serif" font-size="52" font-weight="800">GM</text>
 </svg>
