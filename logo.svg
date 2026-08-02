@@ -1,23 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="GM">
-  <defs>
-    <path id="arcTop" d="M38,112 A66,66 0 0,1 162,112"/>
-    <path id="arcBottom" d="M162,112 A66,66 0 0,1 38,112"/>
-    <radialGradient id="stampFill" cx="50%" cy="42%" r="58%">
-      <stop offset="0%" stop-color="#1a2216"/>
-      <stop offset="100%" stop-color="#0e140e"/>
-    </radialGradient>
-  </defs>
-  <circle cx="100" cy="100" r="98" fill="url(#stampFill)"/>
-  <circle cx="100" cy="100" r="93" fill="none" stroke="#E8FF6A" stroke-width="2.5"/>
-  <g class="stamp__spin" transform-origin="100 100">
-    <circle cx="100" cy="100" r="86" fill="none" stroke="#E8FF6A" stroke-width="1.25" stroke-dasharray="2.5 5"/>
+  <circle cx="100" cy="100" r="97" fill="#12110f"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#c9a96a" stroke-width="2.5"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="22s" repeatCount="indefinite"/>
+    <circle cx="100" cy="100" r="78" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-dasharray="2.5 4.5" opacity="0.7"/>
+    <path id="logoTop" d="M34,104 A66,66 0 0,1 166,104" fill="none"/>
+    <path id="logoBot" d="M166,104 A66,66 0 0,1 34,104" fill="none"/>
+    <text fill="#f3eee4" font-family="Manrope, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">
+      <textPath href="#logoTop" startOffset="50%" text-anchor="middle">FRONTEND · UFA</textPath>
+    </text>
+    <text fill="#f3eee4" font-family="Manrope, sans-serif" font-size="9" font-weight="700" letter-spacing="0.8">
+      <textPath href="#logoBot" startOffset="50%" text-anchor="middle">ГРИГОР МКРТЧЯН</textPath>
+    </text>
   </g>
-  <circle cx="100" cy="100" r="54" fill="none" stroke="#F0B429" stroke-width="1.8"/>
-  <text class="stamp__arc-text stamp__arc-text--top" fill="#F4F0E4" font-size="11" font-weight="700" letter-spacing="1.5">
-    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">FRONTEND · UFA</textPath>
-  </text>
-  <text class="stamp__arc-text stamp__arc-text--bottom" fill="#F4F0E4" font-size="10.5" font-weight="700" letter-spacing="0.8">
-    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">GRIGOR MKRTCHYAN</textPath>
-  </text>
-  <text x="100" y="112" text-anchor="middle" fill="#E8FF6A" font-size="42" font-weight="800" font-family="Noto Sans, Arial, sans-serif" letter-spacing="-1.5">GM</text>
+  <circle cx="100" cy="100" r="48" fill="none" stroke="#c9a96a" stroke-width="1.8"/>
+  <text x="100" y="112" text-anchor="middle" fill="#f3eee4" font-family="Georgia, serif" font-size="42" font-weight="700">GM</text>
 </svg>

@@ -27,7 +27,7 @@ window.addEventListener(
     const y = window.scrollY;
     const goingDown = y > lastY && y > 140;
     top.style.transform = goingDown ? 'translateY(-110%)' : 'translateY(0)';
-    top.style.background = y > 24 ? 'rgba(9, 13, 9, 0.86)' : 'rgba(9, 13, 9, 0.66)';
+    top.style.background = y > 24 ? 'rgba(12, 11, 10, 0.9)' : 'rgba(12, 11, 10, 0.72)';
     lastY = y;
   },
   { passive: true },
