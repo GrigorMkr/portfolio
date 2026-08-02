@@ -786,19 +786,6 @@ html[lang="en"] .hero__brand {
   display: none;
 }
 
-@media (min-width: 980px) {
-  .work__rail {
-    display: block;
-    position: absolute;
-    left: calc(var(--pad) + 1.1rem);
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    border-radius: 999px;
-    background: linear-gradient(180deg, transparent, rgba(138, 125, 104, 0.4), rgba(63, 74, 67, 0.35), transparent);
-  }
-}
-
 .project {
   display: grid;
   gap: 1.25rem;
