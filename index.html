@@ -51,9 +51,9 @@
 
       <div class="top__right">
         <nav class="nav" aria-label="Sections">
+          <a href="#work" data-i18n="navWork">Работы</a>
           <a href="#about" data-i18n="navAbout">Обо мне</a>
           <a href="#certs" data-i18n="navCerts">Сертификаты</a>
-          <a href="#work" data-i18n="navWork">Работы</a>
           <a href="#contact" data-i18n="navContact">Контакты</a>
         </nav>
         <div class="lang" role="group" aria-label="Language">
@@ -101,117 +101,20 @@
               <span data-i18n="firstName">Григор</span>
               <span class="hero__brand-accent" data-i18n="lastName">Мкртчян</span>
             </h1>
-            <p class="hero__lead" data-rise data-i18n="lead">
-              Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
-            </p>
-            <div class="hero__cta" data-rise>
-              <a class="btn btn--primary" href="#work" data-i18n="ctaWork">Смотреть работы</a>
-              <a class="btn btn--ghost" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer" data-i18n="ctaTg">Telegram</a>
-            </div>
           </div>
 
           <aside class="hero__portrait" data-rise>
             <div class="hero__photo-wrap">
               <img class="hero__photo" src="./assets/grigor.png" width="420" height="520" data-i18n-alt="photoAlt" alt="Фото Григора Мкртчяна" />
             </div>
-            <div class="hero__status">
-              <p class="hero__panel-label" data-i18n="nowLabel">Сейчас</p>
-              <p class="hero__panel-value" data-i18n="nowValue">Open to work</p>
-              <p class="hero__panel-note" data-i18n="nowNote">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
-            </div>
           </aside>
         </div>
       </section>
 
-      <details class="fold" id="about">
-        <summary class="fold__summary">
-          <span class="eyebrow" data-i18n="aboutEyebrow">Обо мне</span>
-          <span class="fold__title" data-i18n="aboutTitle">Кто я</span>
-          <span class="fold__hint" aria-hidden="true"></span>
-        </summary>
-        <div class="fold__body about__grid">
-          <div>
-            <p class="section-text" data-i18n="aboutText">
-              Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
-              клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
-            </p>
-            <pre class="about__code" tabindex="0"><code>const grigor = {
-  name: "Григор Мкртчян",
-  role: "Frontend Developer",
-  age: 37,
-  city: "Уфа, Россия",
-  stack: ["JavaScript", "TypeScript", "React"],
-  focus: ["Clean UI", "Fast UX", "Scalable frontend"],
-  status: "Open to work"
-};</code></pre>
-          </div>
-          <div class="about__facts">
-            <h3 data-i18n="stackTitle">Стек</h3>
-            <ul>
-              <li>TypeScript · React · Vite</li>
-              <li>React Router · Redux Toolkit</li>
-              <li>Axios · Leaflet</li>
-              <li>HTML / CSS · JavaScript</li>
-            </ul>
-            <h3 data-i18n="linksTitle">Ссылки</h3>
-            <ul>
-              <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer" data-i18n="resume">Резюме HTML Academy</a></li>
-              <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
-            </ul>
-          </div>
-        </div>
-      </details>
-
-      <details class="fold" id="certs">
-        <summary class="fold__summary">
-          <span class="eyebrow" data-i18n="certsEyebrow">HTML Academy</span>
-          <span class="fold__title" data-i18n="certsTitle">Сертификаты</span>
-          <span class="fold__hint" aria-hidden="true"></span>
-        </summary>
-        <div class="fold__body">
-          <p class="section-text certs__intro" data-i18n="certsIntro">
-            Пять сертификатов профессии фронтенд-разработчика — от вёрстки до React.
-          </p>
-          <div class="certs__grid">
-            <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/html-css-professional-layout.png" alt="" loading="lazy" />
-              <span data-i18n="cert1">HTML и CSS. Профессиональная вёрстка сайтов</span>
-            </a>
-            <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="" loading="lazy" />
-              <span data-i18n="cert2">JavaScript. Профессиональная разработка веб-интерфейсов</span>
-            </a>
-            <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/javascript-client-app-architecture.png" alt="" loading="lazy" />
-              <span data-i18n="cert3">JavaScript. Архитектура клиентских приложений</span>
-            </a>
-            <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/react-complex-client-apps.png" alt="" loading="lazy" />
-              <span data-i18n="cert4">React. Разработка сложных клиентских приложений</span>
-            </a>
-            <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/frontend-developer-profession.png" alt="" loading="lazy" />
-              <span data-i18n="cert5">Профессия «Фронтенд-разработчик»</span>
-            </a>
-          </div>
-        </div>
-      </details>
-
-      <section class="path" id="path">
-        <p class="eyebrow" data-i18n="pathEyebrow">Путь</p>
-        <h2 class="section-title" data-i18n="pathTitle">По мере разработки</h2>
-        <p class="section-text" data-i18n="pathText">
-          Восемь проектов ниже — в хронологии создания репозиториев. От Sedona до Rock Ufa.
-        </p>
-        <div class="timeline-scale" aria-hidden="true">
-          <span>2025</span>
-          <span class="timeline-scale__line"></span>
-          <span>2026</span>
-        </div>
-      </section>
-
       <section class="work" id="work">
+        <header class="work__head">
+          <h2 class="section-title" data-i18n="navWork">Работы</h2>
+        </header>
 
         <article class="project" data-reveal>
           <div class="project__meta">
@@ -326,25 +229,109 @@
         </article>
       </section>
 
-      <section class="contact" id="contact">
-        <p class="eyebrow" data-i18n="contactEyebrow">Связь</p>
-        <h2 class="section-title" data-i18n="contactTitle">Контакты</h2>
-        <p class="section-text" data-i18n="contactText">Можно написать в Telegram или позвонить.</p>
-        <div class="contact__row">
-          <a class="contact__item" href="tel:+79871484032">
-            <span class="contact__label" data-i18n="phone">Телефон</span>
-            <span class="contact__value">+7 987 148-40-32</span>
-          </a>
-          <a class="contact__item" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">
-            <span class="contact__label">Telegram</span>
-            <span class="contact__value">@Grigormk</span>
-          </a>
-          <a class="contact__item" href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">
-            <span class="contact__label">GitHub</span>
-            <span class="contact__value">GrigorMkr</span>
-          </a>
+      <details class="fold" id="about">
+        <summary class="fold__summary">
+          <span class="eyebrow" data-i18n="aboutEyebrow">Обо мне</span>
+          <span class="fold__title" data-i18n="aboutTitle">Кто я</span>
+          <span class="fold__hint" aria-hidden="true"></span>
+        </summary>
+        <div class="fold__body about__grid">
+          <div>
+            <p class="section-text" data-i18n="aboutText">
+              Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
+              клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
+            </p>
+            <p class="section-text" data-i18n="lead">
+              Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
+            </p>
+            <p class="section-text" data-i18n="nowNote">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
+            <pre class="about__code" tabindex="0"><code>const grigor = {
+  name: "Григор Мкртчян",
+  role: "Frontend Developer",
+  age: 37,
+  city: "Уфа, Россия",
+  stack: ["JavaScript", "TypeScript", "React"],
+  focus: ["Clean UI", "Fast UX", "Scalable frontend"],
+  status: "Open to work"
+};</code></pre>
+          </div>
+          <div class="about__facts">
+            <h3 data-i18n="stackTitle">Стек</h3>
+            <ul>
+              <li>TypeScript · React · Vite</li>
+              <li>React Router · Redux Toolkit</li>
+              <li>Axios · Leaflet</li>
+              <li>HTML / CSS · JavaScript</li>
+            </ul>
+            <h3 data-i18n="linksTitle">Ссылки</h3>
+            <ul>
+              <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer" data-i18n="resume">Резюме HTML Academy</a></li>
+              <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </details>
+
+      <details class="fold" id="certs">
+        <summary class="fold__summary">
+          <span class="eyebrow" data-i18n="certsEyebrow">HTML Academy</span>
+          <span class="fold__title" data-i18n="certsTitle">Сертификаты</span>
+          <span class="fold__hint" aria-hidden="true"></span>
+        </summary>
+        <div class="fold__body">
+          <p class="section-text certs__intro" data-i18n="certsIntro">
+            Пять сертификатов профессии фронтенд-разработчика — от вёрстки до React.
+          </p>
+          <div class="certs__grid">
+            <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/html-css-professional-layout.png" alt="" loading="lazy" />
+              <span data-i18n="cert1">HTML и CSS. Профессиональная вёрстка сайтов</span>
+            </a>
+            <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="" loading="lazy" />
+              <span data-i18n="cert2">JavaScript. Профессиональная разработка веб-интерфейсов</span>
+            </a>
+            <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/javascript-client-app-architecture.png" alt="" loading="lazy" />
+              <span data-i18n="cert3">JavaScript. Архитектура клиентских приложений</span>
+            </a>
+            <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/react-complex-client-apps.png" alt="" loading="lazy" />
+              <span data-i18n="cert4">React. Разработка сложных клиентских приложений</span>
+            </a>
+            <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/frontend-developer-profession.png" alt="" loading="lazy" />
+              <span data-i18n="cert5">Профессия «Фронтенд-разработчик»</span>
+            </a>
+          </div>
+        </div>
+      </details>
+
+      <details class="fold" id="contact">
+        <summary class="fold__summary">
+          <span class="eyebrow" data-i18n="contactEyebrow">Связь</span>
+          <span class="fold__title" data-i18n="contactTitle">Контакты</span>
+          <span class="fold__hint" aria-hidden="true"></span>
+        </summary>
+        <div class="fold__body">
+          <p class="section-text" data-i18n="contactText">Можно написать в Telegram или позвонить.</p>
+          <div class="contact__row">
+            <a class="contact__item" href="tel:+79871484032">
+              <span class="contact__label" data-i18n="phone">Телефон</span>
+              <span class="contact__value">+7 987 148-40-32</span>
+            </a>
+            <a class="contact__item" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">
+              <span class="contact__label">Telegram</span>
+              <span class="contact__value">@Grigormk</span>
+            </a>
+            <a class="contact__item" href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">GrigorMkr</span>
+            </a>
+          </div>
+        </div>
+      </details>
     </main>
 
     <footer class="footer">

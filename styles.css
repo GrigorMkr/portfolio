@@ -139,8 +139,8 @@ a {
 }
 
 .stamp--hero {
-  width: min(56vw, 280px);
-  height: min(56vw, 280px);
+  width: min(42vw, 200px);
+  height: min(42vw, 200px);
   margin: 0 auto;
 }
 
@@ -310,8 +310,8 @@ a {
 /* ——— Hero ——— */
 .hero {
   display: grid;
-  gap: clamp(1rem, 2.5vw, 1.5rem);
-  padding: clamp(0.75rem, 2.5vw, 1.5rem) var(--pad) clamp(2.5rem, 6vw, 4rem);
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+  padding: clamp(0.5rem, 2vw, 1.25rem) var(--pad) clamp(1.25rem, 3vw, 2rem);
 }
 
 .hero__seal {
@@ -322,7 +322,7 @@ a {
 
 .hero__body {
   display: grid;
-  gap: clamp(1.5rem, 4vw, 2.5rem);
+  gap: clamp(1rem, 3vw, 1.75rem);
   align-items: center;
 }
 
@@ -345,7 +345,7 @@ a {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(3.2rem, 9vw, 6.4rem);
+  font-size: clamp(2.4rem, 6.5vw, 4.4rem);
   line-height: 0.92;
   letter-spacing: -0.01em;
   display: flex;
@@ -423,11 +423,13 @@ html[lang="en"] .hero__brand {
 .hero__photo-wrap {
   position: relative;
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 24px;
   aspect-ratio: 4 / 5;
-  max-height: min(64vh, 480px);
+  max-height: min(42vh, 320px);
+  max-width: 280px;
+  margin-left: auto;
   background: linear-gradient(160deg, #2f6fed, #0f9f8a);
-  box-shadow: 0 24px 50px rgba(47, 111, 237, 0.18);
+  box-shadow: 0 20px 40px rgba(47, 111, 237, 0.16);
 }
 
 .hero__photo-wrap::after {
@@ -759,9 +761,17 @@ html[lang="en"] .hero__brand {
 
 .work {
   position: relative;
-  padding: 0.5rem var(--pad) 2rem;
+  padding: 0.25rem var(--pad) 1.5rem;
   display: grid;
-  gap: clamp(2.5rem, 6vw, 4.5rem);
+  gap: clamp(2rem, 5vw, 3.5rem);
+}
+
+.work__head {
+  margin: 0;
+}
+
+.work__head .section-title {
+  margin: 0;
 }
 
 .work__rail {
@@ -889,14 +899,14 @@ html[lang="en"] .hero__brand {
 
 /* ——— Contact ——— */
 .contact {
-  padding: clamp(3rem, 7vw, 5rem) var(--pad);
-  margin-top: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .contact__row {
   display: grid;
   gap: 1rem;
-  margin-top: 1.75rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 760px) {
