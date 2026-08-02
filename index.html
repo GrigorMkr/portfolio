@@ -26,32 +26,22 @@
     <header class="top">
       <a class="logo" href="#top" data-i18n-aria="logoAria" aria-label="Григор Мкртчян — наверх">
         <span class="stamp stamp--sm" aria-hidden="true">
-          <div class="stamp__layer stamp__base">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <circle cx="100" cy="100" r="97" fill="#161513" />
-              <circle cx="100" cy="100" r="93" fill="none" stroke="#cfc6b8" stroke-width="2" />
-              <circle cx="100" cy="100" r="52" fill="none" stroke="#cfc6b8" stroke-width="1.4" />
-            </svg>
-          </div>
-          <div class="stamp__layer stamp__spin">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <defs>
-                <path id="arcTopSm" d="M34,106 A68,68 0 0,0 166,106" fill="none" />
-                <path id="arcBotSm" d="M166,106 A68,68 0 0,0 34,106" fill="none" />
-              </defs>
-              <text class="stamp__arc" fill="#f4f0e8" font-size="11" font-weight="700" letter-spacing="2.4">
+          <svg class="stamp__svg" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="98" fill="#1e2430" />
+            <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.8" />
+            <circle cx="100" cy="100" r="52" fill="none" stroke="#d7dde8" stroke-width="1.3" />
+            <g class="stamp__rotator">
+              <path id="arcTopSm" d="M32,100 A68,68 0 0,0 168,100" fill="none" />
+              <path id="arcBotSm" d="M168,100 A68,68 0 0,0 32,100" fill="none" />
+              <text class="stamp__arc" fill="#f7f9fc" font-size="11" font-weight="700" letter-spacing="2.2">
                 <textPath href="#arcTopSm" startOffset="50%" text-anchor="middle" data-i18n="stampTop">МКРТЧЯН</textPath>
               </text>
-              <text class="stamp__arc" fill="#f4f0e8" font-size="10" font-weight="700" letter-spacing="2.8">
+              <text class="stamp__arc" fill="#f7f9fc" font-size="10" font-weight="700" letter-spacing="2.6">
                 <textPath href="#arcBotSm" startOffset="50%" text-anchor="middle" data-i18n="stampBottom">FRONTEND</textPath>
               </text>
-            </svg>
-          </div>
-          <div class="stamp__layer stamp__core">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <text x="100" y="114" text-anchor="middle" class="stamp__gm" font-size="44" font-weight="700">GM</text>
-            </svg>
-          </div>
+            </g>
+            <text x="100" y="114" text-anchor="middle" class="stamp__gm" font-size="44" font-weight="700">GM</text>
+          </svg>
         </span>
         <span class="logo__word">
           <span class="logo__name"><span data-i18n="firstName">Григор</span> <span data-i18n="lastName">Мкртчян</span></span>
@@ -79,38 +69,28 @@
         <div class="hero__seal" data-rise>
           <div class="stamp stamp--hero" aria-hidden="true">
             <span class="stamp__glow"></span>
-            <div class="stamp__layer stamp__base">
-              <svg class="stamp__svg" viewBox="0 0 200 200">
-                <defs>
-                  <radialGradient id="stampCore" cx="40%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#2a2825" />
-                    <stop offset="100%" stop-color="#161513" />
-                  </radialGradient>
-                </defs>
-                <circle cx="100" cy="100" r="98" fill="url(#stampCore)" />
-                <circle cx="100" cy="100" r="93" fill="none" stroke="#cfc6b8" stroke-width="1.4" />
-                <circle cx="100" cy="100" r="54" fill="none" stroke="#cfc6b8" stroke-width="1.2" />
-              </svg>
-            </div>
-            <div class="stamp__layer stamp__spin">
-              <svg class="stamp__svg" viewBox="0 0 200 200">
-                <defs>
-                  <path id="arcTopHero" d="M30,108 A72,72 0 0,0 170,108" fill="none" />
-                  <path id="arcBotHero" d="M170,108 A72,72 0 0,0 30,108" fill="none" />
-                </defs>
-                <text class="stamp__arc stamp__arc--top" fill="#f4f0e8" font-size="14" font-weight="700" letter-spacing="3.2">
+            <svg class="stamp__svg" viewBox="0 0 200 200">
+              <defs>
+                <radialGradient id="stampCore" cx="40%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#2c3444" />
+                  <stop offset="100%" stop-color="#1e2430" />
+                </radialGradient>
+              </defs>
+              <circle cx="100" cy="100" r="98" fill="url(#stampCore)" />
+              <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.5" />
+              <circle cx="100" cy="100" r="54" fill="none" stroke="#d7dde8" stroke-width="1.2" />
+              <g class="stamp__rotator">
+                <path id="arcTopHero" d="M30,100 A70,70 0 0,0 170,100" fill="none" />
+                <path id="arcBotHero" d="M170,100 A70,70 0 0,0 30,100" fill="none" />
+                <text class="stamp__arc" fill="#f7f9fc" font-size="14" font-weight="700" letter-spacing="3">
                   <textPath href="#arcTopHero" startOffset="50%" text-anchor="middle" data-i18n="stampTop">МКРТЧЯН</textPath>
                 </text>
-                <text class="stamp__arc stamp__arc--bot" fill="#f4f0e8" font-size="13" font-weight="700" letter-spacing="4">
+                <text class="stamp__arc" fill="#f7f9fc" font-size="13" font-weight="700" letter-spacing="3.5">
                   <textPath href="#arcBotHero" startOffset="50%" text-anchor="middle" data-i18n="stampBottom">FRONTEND</textPath>
                 </text>
-              </svg>
-            </div>
-            <div class="stamp__layer stamp__core">
-              <svg class="stamp__svg" viewBox="0 0 200 200">
-                <text x="100" y="116" text-anchor="middle" class="stamp__gm" font-size="52" font-weight="800">GM</text>
-              </svg>
-            </div>
+              </g>
+              <text x="100" y="116" text-anchor="middle" class="stamp__gm" font-size="50" font-weight="800">GM</text>
+            </svg>
           </div>
         </div>
 
@@ -370,32 +350,22 @@
     <footer class="footer">
       <div class="footer__brand-row">
         <span class="stamp stamp--sm" aria-hidden="true">
-          <div class="stamp__layer stamp__base">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <circle cx="100" cy="100" r="97" fill="#161513" />
-              <circle cx="100" cy="100" r="93" fill="none" stroke="#cfc6b8" stroke-width="2" />
-              <circle cx="100" cy="100" r="52" fill="none" stroke="#cfc6b8" stroke-width="1.4" />
-            </svg>
-          </div>
-          <div class="stamp__layer stamp__spin">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <defs>
-                <path id="arcTopFt" d="M34,106 A68,68 0 0,0 166,106" fill="none" />
-                <path id="arcBotFt" d="M166,106 A68,68 0 0,0 34,106" fill="none" />
-              </defs>
-              <text class="stamp__arc" fill="#f4f0e8" font-size="11" font-weight="700" letter-spacing="2.4">
+          <svg class="stamp__svg" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="98" fill="#1e2430" />
+            <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.8" />
+            <circle cx="100" cy="100" r="52" fill="none" stroke="#d7dde8" stroke-width="1.3" />
+            <g class="stamp__rotator">
+              <path id="arcTopFt" d="M32,100 A68,68 0 0,0 168,100" fill="none" />
+              <path id="arcBotFt" d="M168,100 A68,68 0 0,0 32,100" fill="none" />
+              <text class="stamp__arc" fill="#f7f9fc" font-size="11" font-weight="700" letter-spacing="2.2">
                 <textPath href="#arcTopFt" startOffset="50%" text-anchor="middle" data-i18n="stampTop">МКРТЧЯН</textPath>
               </text>
-              <text class="stamp__arc" fill="#f4f0e8" font-size="10" font-weight="700" letter-spacing="2.8">
+              <text class="stamp__arc" fill="#f7f9fc" font-size="10" font-weight="700" letter-spacing="2.6">
                 <textPath href="#arcBotFt" startOffset="50%" text-anchor="middle" data-i18n="stampBottom">FRONTEND</textPath>
               </text>
-            </svg>
-          </div>
-          <div class="stamp__layer stamp__core">
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <text x="100" y="114" text-anchor="middle" class="stamp__gm" font-size="44" font-weight="700">GM</text>
-            </svg>
-          </div>
+            </g>
+            <text x="100" y="114" text-anchor="middle" class="stamp__gm" font-size="44" font-weight="700">GM</text>
+          </svg>
         </span>
         <div>
           <p class="footer__brand"><span data-i18n="firstName">Григор</span> <span data-i18n="lastName">Мкртчян</span></p>

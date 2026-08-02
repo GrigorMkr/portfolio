@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="GM">
-  <circle cx="100" cy="100" r="98" fill="#161513"/>
-  <circle cx="100" cy="100" r="93" fill="none" stroke="#cfc6b8" stroke-width="1.4"/>
-  <circle cx="100" cy="100" r="54" fill="none" stroke="#cfc6b8" stroke-width="1.2"/>
+  <circle cx="100" cy="100" r="98" fill="#1e2430"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#d7dde8" stroke-width="1.2"/>
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="28s" repeatCount="indefinite"/>
-    <path id="logoTop" d="M30,108 A72,72 0 0,0 170,108" fill="none"/>
-    <path id="logoBot" d="M170,108 A72,72 0 0,0 30,108" fill="none"/>
-    <text fill="#f4f0e8" font-family="Loos Condensed, sans-serif" font-size="14" font-weight="700" letter-spacing="3.2">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="24s" repeatCount="indefinite"/>
+    <path id="logoTop" d="M30,100 A70,70 0 0,0 170,100" fill="none"/>
+    <path id="logoBot" d="M170,100 A70,70 0 0,0 30,100" fill="none"/>
+    <text fill="#f7f9fc" font-family="Loos Condensed, sans-serif" font-size="14" font-weight="700" letter-spacing="3">
       <textPath href="#logoTop" startOffset="50%" text-anchor="middle">МКРТЧЯН</textPath>
     </text>
-    <text fill="#f4f0e8" font-family="Loos Condensed, sans-serif" font-size="13" font-weight="700" letter-spacing="4">
+    <text fill="#f7f9fc" font-family="Loos Condensed, sans-serif" font-size="13" font-weight="700" letter-spacing="3.5">
       <textPath href="#logoBot" startOffset="50%" text-anchor="middle">FRONTEND</textPath>
     </text>
   </g>
-  <text x="100" y="116" text-anchor="middle" fill="#f4f0e8" font-family="Loos Normal, sans-serif" font-size="52" font-weight="800">GM</text>
+  <text x="100" y="116" text-anchor="middle" fill="#f7f9fc" font-family="Loos Normal, sans-serif" font-size="50" font-weight="800">GM</text>
 </svg>
