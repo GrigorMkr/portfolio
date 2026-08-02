@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Григор Мкртчян — Frontend</title>
+    <meta
+      name="description"
+      content="Портфолио фронтенд-разработчика: от вёрстки HTML Academy до продуктовых порталов."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand-mark" href="#top">ГМ</a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#work">Работы</a>
+        <a href="#about">Обо мне</a>
+        <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="hero-kicker">Frontend · Уфа · 2025–2026</p>
+        <h1 class="hero-brand">
+          <span class="hero-brand__line">Григор</span>
+          <span class="hero-brand__line hero-brand__line--accent">Мкртчян</span>
+        </h1>
+        <p class="hero-lead">
+          Собираю интерфейсы: от учебной вёрстки до живых порталов с картами, кабинетом и афишей.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn--primary" href="#work">Смотреть работы</a>
+          <a class="btn btn--ghost" href="mailto:grigormkr@users.noreply.github.com">Написать</a>
+        </div>
+        <div class="hero-rail" aria-hidden="true">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Vite</span>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="section-title">Путь по мере разработки</h2>
+        <p class="section-text">
+          Восемь проектов ниже — в хронологии создания репозиториев. От статичной вёрстки Sedona
+          до продуктовых сборок NagaevoMaster и Rock Ufa.
+        </p>
+      </section>
+
+      <section class="work" id="work">
+        <article class="project" data-reveal>
+          <div class="project__meta">
+            <time datetime="2025-04">01 · апр 2025</time>
+            <h3>Sedona</h3>
+            <p>Адаптивный лендинг города. Сетка, БЭМ, пиксель-перфект по макету HTML Academy.</p>
+            <p class="project__stack">HTML · CSS · Adaptive</p>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-sedona-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/2552419-sedona-2/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/sedona.jpg" alt="Скриншот сайта Sedona" width="1440" height="900" loading="eager" />
+          </a>
+        </article>
+
+        <article class="project project--flip" data-reveal>
+          <div class="project__meta">
+            <time datetime="2025-07">02 · июл 2025</time>
+            <h3>Kekstagram</h3>
+            <p>Фотосервис: загрузка, фильтры, сортировка ленты и модальные окна на чистом JS.</p>
+            <p class="project__stack">JavaScript · DOM · Webpack</p>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-kekstagram-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/2552419-kekstagram-2/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/kekstagram.jpg" alt="Скриншот Kekstagram" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__meta">
+            <time datetime="2025-09">03 · сен 2025</time>
+            <h3>Big Trip</h3>
+            <p>Планировщик путешествий: точки маршрута, офферы, фильтры и подсчёт бюджета.</p>
+            <p class="project__stack">JavaScript · MVP · SPA</p>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-big-trip-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/2552419-big-trip-2/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/big-trip.jpg" alt="Скриншот Big Trip" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project project--flip" data-reveal>
+          <div class="project__meta">
+            <time datetime="2025-11">04 · ноя 2025</time>
+            <h3>Six Cities</h3>
+            <p>Каталог жилья с картой, сортировкой и авторизацией. React и TypeScript.</p>
+            <p class="project__stack">React · TypeScript · Leaflet</p>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-six-cities-3/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/2552419-six-cities-3/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/six-cities.jpg" alt="Скриншот Six Cities" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__meta">
+            <time datetime="2026-04">05 · апр 2026</time>
+            <h3>Mishka / Spreent</h3>
+            <p>Маркетинговый лендинг образовательной платформы: hero, типографика, анимации.</p>
+            <p class="project__stack">HTML · CSS · Landing</p>
+            <a class="project__link" href="https://grigormkr.github.io/mish-academia-/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/mish-academia-/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/mishka.jpg" alt="Скриншот Spreent" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project project--flip" data-reveal>
+          <div class="project__meta">
+            <time datetime="2026-04">06 · апр 2026</time>
+            <h3>Escape Room</h3>
+            <p>Каталог квестов Петербурга: фильтры по жанру и сложности, карточки и запись.</p>
+            <p class="project__stack">React · Vite · SPA</p>
+            <a class="project__link" href="https://grigormkr.github.io/escape-room-vite/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/escape-room-vite/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/escape-room.jpg" alt="Скриншот Escape Room" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__meta">
+            <time datetime="2026-06">07 · июн 2026</time>
+            <h3>NagaevoMaster</h3>
+            <p>Портал посёлка: услуги, доска объявлений, форум, новости и личный кабинет.</p>
+            <p class="project__stack">React · TypeScript · Vite</p>
+            <a class="project__link" href="https://grigormkr.github.io/NagaevoMaster/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/NagaevoMaster/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/nagaevo.jpg" alt="Скриншот NagaevoMaster" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project project--flip" data-reveal>
+          <div class="project__meta">
+            <time datetime="2026-07">08 · июл 2026</time>
+            <h3>Rock Ufa</h3>
+            <p>Рок-портал Уфы с 2005: афиша, медиа, сцена и сообщество в тёмной сценографии.</p>
+            <p class="project__stack">TypeScript · React · Vite</p>
+            <a class="project__link" href="https://grigormkr.github.io/Rock-Ufa02/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+          </div>
+          <a class="project__shot" href="https://grigormkr.github.io/Rock-Ufa02/" target="_blank" rel="noopener noreferrer">
+            <img src="./shots/rock-ufa.jpg" alt="Скриншот Rock Ufa" width="1440" height="900" loading="lazy" />
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__brand">Григор Мкртчян</p>
+      <p class="footer__note">Frontend developer · Уфа</p>
+      <div class="footer__links">
+        <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#work">Работы</a>
+      </div>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
