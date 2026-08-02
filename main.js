@@ -57,6 +57,12 @@ function openFoldFromHash() {
     fold.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
+
+document.querySelectorAll('details.fold').forEach((fold) => {
+  if (!(fold instanceof HTMLDetailsElement)) return;
+  if (window.location.hash !== `#${fold.id}`) fold.open = false;
+});
+
 window.addEventListener('hashchange', openFoldFromHash);
 openFoldFromHash();
 

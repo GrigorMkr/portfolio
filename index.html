@@ -65,52 +65,6 @@
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero__seal" data-rise>
-          <div class="stamp stamp--hero" aria-hidden="true">
-            <span class="stamp__glow"></span>
-            <svg class="stamp__svg" viewBox="0 0 200 200">
-              <defs>
-                <radialGradient id="stampCore" cx="40%" cy="35%" r="65%">
-                  <stop offset="0%" stop-color="#2c3444" />
-                  <stop offset="100%" stop-color="#1e2430" />
-                </radialGradient>
-              </defs>
-              <circle cx="100" cy="100" r="98" fill="url(#stampCore)" />
-              <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.5" />
-              <circle cx="100" cy="100" r="54" fill="none" stroke="#d7dde8" stroke-width="1.2" />
-              <g class="stamp__rotator">
-                <path id="arcTopHero" d="M30,100 A70,70 0 0,0 170,100" fill="none" />
-                <path id="arcBotHero" d="M170,100 A70,70 0 0,0 30,100" fill="none" />
-                <text class="stamp__arc" fill="#f7f9fc" font-size="14" font-weight="700" letter-spacing="3">
-                  <textPath href="#arcTopHero" startOffset="50%" text-anchor="middle" data-i18n="stampTop">МКРТЧЯН</textPath>
-                </text>
-                <text class="stamp__arc" fill="#f7f9fc" font-size="13" font-weight="700" letter-spacing="3.5">
-                  <textPath href="#arcBotHero" startOffset="50%" text-anchor="middle" data-i18n="stampBottom">FRONTEND</textPath>
-                </text>
-              </g>
-              <text x="100" y="116" text-anchor="middle" class="stamp__gm" font-size="50" font-weight="800">GM</text>
-            </svg>
-          </div>
-        </div>
-
-        <div class="hero__body">
-          <div class="hero__copy">
-            <p class="hero__kicker" data-rise data-i18n="kicker">Уфа · Frontend · Open to work</p>
-            <h1 class="hero__brand" data-rise>
-              <span data-i18n="firstName">Григор</span>
-              <span class="hero__brand-accent" data-i18n="lastName">Мкртчян</span>
-            </h1>
-          </div>
-
-          <aside class="hero__portrait" data-rise>
-            <div class="hero__photo-wrap">
-              <img class="hero__photo" src="./assets/grigor.png" width="420" height="520" data-i18n-alt="photoAlt" alt="Фото Григора Мкртчяна" />
-            </div>
-          </aside>
-        </div>
-      </section>
-
       <section class="work" id="work">
         <header class="work__head">
           <h2 class="section-title" data-i18n="navWork">Работы</h2>
@@ -235,17 +189,55 @@
           <span class="fold__title" data-i18n="aboutTitle">Кто я</span>
           <span class="fold__hint" aria-hidden="true"></span>
         </summary>
-        <div class="fold__body about__grid">
-          <div>
-            <p class="section-text" data-i18n="aboutText">
-              Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
-              клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
-            </p>
-            <p class="section-text" data-i18n="lead">
-              Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
-            </p>
-            <p class="section-text" data-i18n="nowNote">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
-            <pre class="about__code" tabindex="0"><code>const grigor = {
+        <div class="fold__body">
+          <div class="about__intro">
+            <div class="stamp stamp--hero" aria-hidden="true">
+              <span class="stamp__glow"></span>
+              <svg class="stamp__svg" viewBox="0 0 200 200">
+                <defs>
+                  <radialGradient id="stampCore" cx="40%" cy="35%" r="65%">
+                    <stop offset="0%" stop-color="#2c3444" />
+                    <stop offset="100%" stop-color="#1e2430" />
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="98" fill="url(#stampCore)" />
+                <circle cx="100" cy="100" r="93" fill="none" stroke="#d7dde8" stroke-width="1.5" />
+                <circle cx="100" cy="100" r="54" fill="none" stroke="#d7dde8" stroke-width="1.2" />
+                <g class="stamp__rotator">
+                  <path id="arcTopHero" d="M30,100 A70,70 0 0,0 170,100" fill="none" />
+                  <path id="arcBotHero" d="M170,100 A70,70 0 0,0 30,100" fill="none" />
+                  <text class="stamp__arc" fill="#f7f9fc" font-size="14" font-weight="700" letter-spacing="3">
+                    <textPath href="#arcTopHero" startOffset="50%" text-anchor="middle" data-i18n="stampTop">МКРТЧЯН</textPath>
+                  </text>
+                  <text class="stamp__arc" fill="#f7f9fc" font-size="13" font-weight="700" letter-spacing="3.5">
+                    <textPath href="#arcBotHero" startOffset="50%" text-anchor="middle" data-i18n="stampBottom">FRONTEND</textPath>
+                  </text>
+                </g>
+                <text x="100" y="116" text-anchor="middle" class="stamp__gm" font-size="50" font-weight="800">GM</text>
+              </svg>
+            </div>
+            <div class="about__person">
+              <p class="hero__kicker" data-i18n="kicker">Уфа · Frontend · Open to work</p>
+              <h3 class="about__name">
+                <span data-i18n="firstName">Григор</span>
+                <span class="hero__brand-accent" data-i18n="lastName">Мкртчян</span>
+              </h3>
+              <div class="hero__photo-wrap about__photo">
+                <img class="hero__photo" src="./assets/grigor.png" width="420" height="520" data-i18n-alt="photoAlt" alt="Фото Григора Мкртчяна" />
+              </div>
+            </div>
+          </div>
+          <div class="about__grid">
+            <div>
+              <p class="section-text" data-i18n="aboutText">
+                Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
+                клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
+              </p>
+              <p class="section-text" data-i18n="lead">
+                Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
+              </p>
+              <p class="section-text" data-i18n="nowNote">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
+              <pre class="about__code" tabindex="0"><code>const grigor = {
   name: "Григор Мкртчян",
   role: "Frontend Developer",
   age: 37,
@@ -254,21 +246,22 @@
   focus: ["Clean UI", "Fast UX", "Scalable frontend"],
   status: "Open to work"
 };</code></pre>
-          </div>
-          <div class="about__facts">
-            <h3 data-i18n="stackTitle">Стек</h3>
-            <ul>
-              <li>TypeScript · React · Vite</li>
-              <li>React Router · Redux Toolkit</li>
-              <li>Axios · Leaflet</li>
-              <li>HTML / CSS · JavaScript</li>
-            </ul>
-            <h3 data-i18n="linksTitle">Ссылки</h3>
-            <ul>
-              <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer" data-i18n="resume">Резюме HTML Academy</a></li>
-              <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
-            </ul>
+            </div>
+            <div class="about__facts">
+              <h3 data-i18n="stackTitle">Стек</h3>
+              <ul>
+                <li>TypeScript · React · Vite</li>
+                <li>React Router · Redux Toolkit</li>
+                <li>Axios · Leaflet</li>
+                <li>HTML / CSS · JavaScript</li>
+              </ul>
+              <h3 data-i18n="linksTitle">Ссылки</h3>
+              <ul>
+                <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer" data-i18n="resume">Резюме HTML Academy</a></li>
+                <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </details>
