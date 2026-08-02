@@ -6,59 +6,98 @@
     <title>Григор Мкртчян — Frontend</title>
     <meta
       name="description"
-      content="Портфолио фронтенд-разработчика: от вёрстки HTML Academy до продуктовых порталов."
+      content="Портфолио фронтенд-разработчика Григора Мкртчяна: от вёрстки до продуктовых порталов."
     />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="atmosphere__wash"></div>
+      <div class="atmosphere__mesh"></div>
+      <div class="atmosphere__grain"></div>
+    </div>
 
     <header class="top">
-      <a class="brand-mark" href="#top">ГМ</a>
+      <a class="logo" href="#top" aria-label="Григор Мкртчян — наверх">
+        <img class="logo__mark" src="./logo.svg" width="36" height="36" alt="" />
+        <span class="logo__word">
+          <span class="logo__name">Григор Мкртчян</span>
+          <span class="logo__role">Frontend</span>
+        </span>
+      </a>
       <nav class="nav" aria-label="Разделы">
         <a href="#work">Работы</a>
-        <a href="#about">Обо мне</a>
+        <a href="#about">Путь</a>
         <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="hero-kicker">Frontend · Уфа · 2025–2026</p>
-        <h1 class="hero-brand">
-          <span class="hero-brand__line">Григор</span>
-          <span class="hero-brand__line hero-brand__line--accent">Мкртчян</span>
-        </h1>
-        <p class="hero-lead">
-          Собираю интерфейсы: от учебной вёрстки до живых порталов с картами, кабинетом и афишей.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn--primary" href="#work">Смотреть работы</a>
-          <a class="btn btn--ghost" href="mailto:grigormkr@users.noreply.github.com">Написать</a>
+        <div class="hero__copy">
+          <div class="hero__logo-stage" data-rise>
+            <img class="hero__logo" src="./logo.svg" width="120" height="120" alt="Логотип GM" />
+            <span class="hero__logo-caption">знак GM · кадр + вершины</span>
+          </div>
+          <p class="hero__kicker" data-rise>Уфа · Frontend · 2025–2026</p>
+          <h1 class="hero__brand" data-rise>
+            <span>Григор</span>
+            <span class="hero__brand-accent">Мкртчян</span>
+          </h1>
+          <p class="hero__lead" data-rise>
+            Собираю интерфейсы, которые ощущаются как место: от учебной вёрстки до живых порталов
+            с картой, кабинетом и афишей.
+          </p>
+          <div class="hero__cta" data-rise>
+            <a class="btn btn--primary" href="#work">Смотреть работы</a>
+            <a class="btn btn--ghost" href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </div>
-        <div class="hero-rail" aria-hidden="true">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Vite</span>
-        </div>
+
+        <aside class="hero__panel" data-rise aria-label="Кратко">
+          <p class="hero__panel-label">Сейчас</p>
+          <p class="hero__panel-value">8 проектов в ленте</p>
+          <p class="hero__panel-note">Хронология по дате репозитория — от Sedona до Rock Ufa.</p>
+          <ul class="hero__stack">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Vite</li>
+          </ul>
+        </aside>
       </section>
 
       <section class="about" id="about">
-        <h2 class="section-title">Путь по мере разработки</h2>
-        <p class="section-text">
-          Восемь проектов ниже — в хронологии создания репозиториев. От статичной вёрстки Sedona
-          до продуктовых сборок NagaevoMaster и Rock Ufa.
-        </p>
+        <div class="about__inner">
+          <p class="eyebrow">Путь</p>
+          <h2 class="section-title">По мере разработки</h2>
+          <p class="section-text">
+            Сначала сетка и адаптив, потом состояние и API, затем целые продуктовые поверхности.
+            Ниже — та же лестница, только в картинках.
+          </p>
+        </div>
+        <div class="timeline-scale" aria-hidden="true">
+          <span>2025</span>
+          <span class="timeline-scale__line"></span>
+          <span>2026</span>
+        </div>
       </section>
 
       <section class="work" id="work">
+        <div class="work__rail" aria-hidden="true"></div>
+
         <article class="project" data-reveal>
           <div class="project__meta">
-            <time datetime="2025-04">01 · апр 2025</time>
+            <div class="project__index">01</div>
+            <time datetime="2025-04">апр 2025</time>
             <h3>Sedona</h3>
             <p>Адаптивный лендинг города. Сетка, БЭМ, пиксель-перфект по макету HTML Academy.</p>
             <p class="project__stack">HTML · CSS · Adaptive</p>
@@ -71,7 +110,8 @@
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
-            <time datetime="2025-07">02 · июл 2025</time>
+            <div class="project__index">02</div>
+            <time datetime="2025-07">июл 2025</time>
             <h3>Kekstagram</h3>
             <p>Фотосервис: загрузка, фильтры, сортировка ленты и модальные окна на чистом JS.</p>
             <p class="project__stack">JavaScript · DOM · Webpack</p>
@@ -84,7 +124,8 @@
 
         <article class="project" data-reveal>
           <div class="project__meta">
-            <time datetime="2025-09">03 · сен 2025</time>
+            <div class="project__index">03</div>
+            <time datetime="2025-09">сен 2025</time>
             <h3>Big Trip</h3>
             <p>Планировщик путешествий: точки маршрута, офферы, фильтры и подсчёт бюджета.</p>
             <p class="project__stack">JavaScript · MVP · SPA</p>
@@ -97,7 +138,8 @@
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
-            <time datetime="2025-11">04 · ноя 2025</time>
+            <div class="project__index">04</div>
+            <time datetime="2025-11">ноя 2025</time>
             <h3>Six Cities</h3>
             <p>Каталог жилья с картой, сортировкой и авторизацией. React и TypeScript.</p>
             <p class="project__stack">React · TypeScript · Leaflet</p>
@@ -110,7 +152,8 @@
 
         <article class="project" data-reveal>
           <div class="project__meta">
-            <time datetime="2026-04">05 · апр 2026</time>
+            <div class="project__index">05</div>
+            <time datetime="2026-04">апр 2026</time>
             <h3>Mishka / Spreent</h3>
             <p>Маркетинговый лендинг образовательной платформы: hero, типографика, анимации.</p>
             <p class="project__stack">HTML · CSS · Landing</p>
@@ -123,7 +166,8 @@
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
-            <time datetime="2026-04">06 · апр 2026</time>
+            <div class="project__index">06</div>
+            <time datetime="2026-04">апр 2026</time>
             <h3>Escape Room</h3>
             <p>Каталог квестов Петербурга: фильтры по жанру и сложности, карточки и запись.</p>
             <p class="project__stack">React · Vite · SPA</p>
@@ -136,7 +180,8 @@
 
         <article class="project" data-reveal>
           <div class="project__meta">
-            <time datetime="2026-06">07 · июн 2026</time>
+            <div class="project__index">07</div>
+            <time datetime="2026-06">июн 2026</time>
             <h3>NagaevoMaster</h3>
             <p>Портал посёлка: услуги, доска объявлений, форум, новости и личный кабинет.</p>
             <p class="project__stack">React · TypeScript · Vite</p>
@@ -149,7 +194,8 @@
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
-            <time datetime="2026-07">08 · июл 2026</time>
+            <div class="project__index">08</div>
+            <time datetime="2026-07">июл 2026</time>
             <h3>Rock Ufa</h3>
             <p>Рок-портал Уфы с 2005: афиша, медиа, сцена и сообщество в тёмной сценографии.</p>
             <p class="project__stack">TypeScript · React · Vite</p>
@@ -163,11 +209,17 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__brand">Григор Мкртчян</p>
-      <p class="footer__note">Frontend developer · Уфа</p>
+      <div class="footer__brand-row">
+        <img src="./logo.svg" width="48" height="48" alt="" />
+        <div>
+          <p class="footer__brand">Григор Мкртчян</p>
+          <p class="footer__note">Frontend developer · Уфа</p>
+        </div>
+      </div>
       <div class="footer__links">
         <a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="#work">Работы</a>
+        <a href="#top">Наверх</a>
       </div>
     </footer>
 
