@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="GM">
-  <circle cx="100" cy="100" r="97" fill="#12110f"/>
-  <circle cx="100" cy="100" r="93" fill="none" stroke="#c9a96a" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="97" fill="#ff4f1a"/>
   <g>
     <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="14s" repeatCount="indefinite"/>
-    <circle cx="100" cy="100" r="78" fill="none" stroke="#c9a96a" stroke-width="1.2" stroke-dasharray="2.5 4.5" opacity="0.7"/>
+    <circle cx="100" cy="100" r="78" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="2.5 4.5" opacity="0.85"/>
     <path id="logoRing" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" fill="none"/>
-    <text fill="#f3eee4" font-family="Manrope, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.6">
+    <text fill="#ffffff" font-family="Manrope, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.6">
       <textPath href="#logoRing" startOffset="0%">FRONTEND · UFA · ГРИГОР МКРТЧЯН · </textPath>
     </text>
   </g>
-  <circle cx="100" cy="100" r="48" fill="none" stroke="#c9a96a" stroke-width="1.8"/>
-  <text x="100" y="112" text-anchor="middle" fill="#f3eee4" font-family="Loos Normal, sans-serif" font-size="42" font-weight="700">GM</text>
+  <circle cx="100" cy="100" r="48" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+  <text x="100" y="112" text-anchor="middle" fill="#ffffff" font-family="Loos Normal, sans-serif" font-size="42" font-weight="700">GM</text>
 </svg>
