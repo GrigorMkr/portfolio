@@ -44,8 +44,7 @@
       <section class="hero">
         <div class="hero__copy">
           <div class="hero__logo-stage" data-rise>
-            <img class="hero__logo" src="./logo.svg" width="112" height="112" alt="Логотип GM" />
-            <span class="hero__logo-caption">монограмма GM</span>
+            <img class="hero__logo hero__logo--stamp" src="./logo.svg" width="140" height="140" alt="Печать GM" />
           </div>
           <p class="hero__kicker" data-rise>Уфа · Frontend · Open to work</p>
           <h1 class="hero__brand" data-rise>
@@ -69,11 +68,14 @@
         </aside>
       </section>
 
-      <section class="about" id="about">
-        <div class="about__grid">
+      <details class="fold" id="about">
+        <summary class="fold__summary">
+          <span class="eyebrow">Обо мне</span>
+          <span class="fold__title">Кто я</span>
+          <span class="fold__hint" aria-hidden="true"></span>
+        </summary>
+        <div class="fold__body about__grid">
           <div>
-            <p class="eyebrow">Обо мне</p>
-            <h2 class="section-title">Кто я</h2>
             <p class="section-text">
               Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
               клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
@@ -104,39 +106,42 @@
             </ul>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="certs" id="certs">
-        <div class="certs__head">
-          <p class="eyebrow">HTML Academy</p>
-          <h2 class="section-title">Сертификаты</h2>
-          <p class="section-text">
+      <details class="fold" id="certs">
+        <summary class="fold__summary">
+          <span class="eyebrow">HTML Academy</span>
+          <span class="fold__title">Сертификаты</span>
+          <span class="fold__hint" aria-hidden="true"></span>
+        </summary>
+        <div class="fold__body">
+          <p class="section-text certs__intro">
             Пять сертификатов профессии фронтенд-разработчика — от вёрстки до React.
           </p>
+          <div class="certs__grid">
+            <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/html-css-professional-layout.png" alt="Сертификат HTML и CSS" loading="lazy" />
+              <span>HTML и CSS. Профессиональная вёрстка сайтов</span>
+            </a>
+            <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="Сертификат JavaScript интерфейсы" loading="lazy" />
+              <span>JavaScript. Профессиональная разработка веб-интерфейсов</span>
+            </a>
+            <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/javascript-client-app-architecture.png" alt="Сертификат архитектура JS" loading="lazy" />
+              <span>JavaScript. Архитектура клиентских приложений</span>
+            </a>
+            <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/react-complex-client-apps.png" alt="Сертификат React" loading="lazy" />
+              <span>React. Разработка сложных клиентских приложений</span>
+            </a>
+            <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/frontend-developer-profession.png" alt="Сертификат профессии фронтенд" loading="lazy" />
+              <span>Профессия «Фронтенд-разработчик»</span>
+            </a>
+          </div>
         </div>
-        <div class="certs__grid">
-          <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/certificates/html-css-professional-layout.png" alt="Сертификат HTML и CSS" loading="lazy" />
-            <span>HTML и CSS. Профессиональная вёрстка сайтов</span>
-          </a>
-          <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="Сертификат JavaScript интерфейсы" loading="lazy" />
-            <span>JavaScript. Профессиональная разработка веб-интерфейсов</span>
-          </a>
-          <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/certificates/javascript-client-app-architecture.png" alt="Сертификат архитектура JS" loading="lazy" />
-            <span>JavaScript. Архитектура клиентских приложений</span>
-          </a>
-          <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/certificates/react-complex-client-apps.png" alt="Сертификат React" loading="lazy" />
-            <span>React. Разработка сложных клиентских приложений</span>
-          </a>
-          <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/certificates/frontend-developer-profession.png" alt="Сертификат профессии фронтенд" loading="lazy" />
-            <span>Профессия «Фронтенд-разработчик»</span>
-          </a>
-        </div>
-      </section>
+      </details>
 
       <section class="path" id="path">
         <p class="eyebrow">Путь</p>

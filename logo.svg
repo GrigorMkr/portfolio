@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="GM">
-  <rect width="128" height="128" rx="28" fill="#121812"/>
-  <rect x="7" y="7" width="114" height="114" rx="22" fill="none" stroke="#E8FF6A" stroke-width="4"/>
-  <text
-    x="64"
-    y="78"
-    text-anchor="middle"
-    font-family="Segoe UI, Arial, Helvetica, sans-serif"
-    font-size="52"
-    font-weight="800"
-    letter-spacing="-2"
-    fill="#F4F0E4"
-  >GM</text>
-  <rect x="34" y="96" width="60" height="6" rx="3" fill="#F0B429"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" role="img" aria-label="GM">
+  <defs>
+    <path id="ringPath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#141a14"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E8FF6A" stroke-width="3.5"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#E8FF6A" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <circle cx="100" cy="100" r="58" fill="none" stroke="#F0B429" stroke-width="2"/>
+  <text fill="#F4F0E4" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3.2">
+    <textPath href="#ringPath" xlink:href="#ringPath" startOffset="0%">FRONTEND · UFA · GRIGOR · MKRTCHYAN · </textPath>
+  </text>
+  <text x="100" y="112" text-anchor="middle" font-family="Segoe UI, Arial Black, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2" fill="#E8FF6A">GM</text>
+  <circle cx="100" cy="48" r="2.2" fill="#F0B429"/>
+  <circle cx="100" cy="152" r="2.2" fill="#F0B429"/>
 </svg>

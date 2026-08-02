@@ -47,3 +47,16 @@ window.addEventListener(
   },
   { passive: true },
 );
+
+function openFoldFromHash() {
+  const id = window.location.hash.replace('#', '');
+  if (!id) return;
+  const fold = document.getElementById(id);
+  if (fold instanceof HTMLDetailsElement) {
+    fold.open = true;
+    fold.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+window.addEventListener('hashchange', openFoldFromHash);
+openFoldFromHash();
