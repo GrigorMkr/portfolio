@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Григор Мкртчян — Frontend</title>
-    <meta
-      name="description"
-      content="Frontend-разработчик из Уфы. React, TypeScript, Vite. Портфолио, сертификаты HTML Academy, контакты."
-    />
+    <title data-i18n="title">Григор Мкртчян — Frontend</title>
+    <meta name="description" data-i18n-content="desc" content="Frontend-разработчик из Уфы. React, TypeScript, Vite. Портфолио, сертификаты HTML Academy, контакты." />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@500;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -20,63 +17,115 @@
   <body>
     <div class="atmosphere" aria-hidden="true">
       <div class="atmosphere__wash"></div>
+      <div class="atmosphere__orb atmosphere__orb--a"></div>
+      <div class="atmosphere__orb atmosphere__orb--b"></div>
       <div class="atmosphere__mesh"></div>
       <div class="atmosphere__grain"></div>
     </div>
 
     <header class="top">
-      <a class="logo" href="#top" aria-label="Григор Мкртчян — наверх">
-        <img class="logo__mark" src="./logo.svg" width="40" height="40" alt="GM" />
+      <a class="logo" href="#top" data-i18n-aria="logoAria" aria-label="Григор Мкртчян — наверх">
+        <span class="stamp stamp--sm" aria-hidden="true">
+          <svg class="stamp__svg" viewBox="0 0 200 200">
+            <defs>
+              <path id="stampRingSm" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="#141a14" />
+            <g class="stamp__spin">
+              <circle cx="100" cy="100" r="90" fill="none" stroke="#E8FF6A" stroke-width="3" />
+              <circle cx="100" cy="100" r="83" fill="none" stroke="#E8FF6A" stroke-width="1.4" stroke-dasharray="2.5 4.5" />
+              <text class="stamp__ring-text" fill="#F4F0E4" font-size="10.5" font-weight="700" letter-spacing="2.8">
+                <textPath href="#stampRingSm" data-i18n="stampRing">FRONTEND · UFA · GRIGOR MKRTCHYAN · </textPath>
+              </text>
+            </g>
+            <circle cx="100" cy="100" r="56" fill="none" stroke="#F0B429" stroke-width="2" />
+            <text x="100" y="112" text-anchor="middle" class="stamp__gm" font-size="48" font-weight="800">GM</text>
+          </svg>
+        </span>
         <span class="logo__word">
-          <span class="logo__name">Григор Мкртчян</span>
-          <span class="logo__role">Frontend</span>
+          <span class="logo__name"><span data-i18n="firstName">Григор</span> <span data-i18n="lastName">Мкртчян</span></span>
+          <span class="logo__role" data-i18n="role">Frontend</span>
         </span>
       </a>
-      <nav class="nav" aria-label="Разделы">
-        <a href="#about">Обо мне</a>
-        <a href="#certs">Сертификаты</a>
-        <a href="#work">Работы</a>
-        <a href="#contact">Контакты</a>
-      </nav>
+
+      <div class="top__right">
+        <nav class="nav" aria-label="Sections">
+          <a href="#about" data-i18n="navAbout">Обо мне</a>
+          <a href="#certs" data-i18n="navCerts">Сертификаты</a>
+          <a href="#work" data-i18n="navWork">Работы</a>
+          <a href="#contact" data-i18n="navContact">Контакты</a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" class="lang__btn is-active" data-lang="ru">RU</button>
+          <button type="button" class="lang__btn" data-lang="en">EN</button>
+          <button type="button" class="lang__btn" data-lang="hy">HY</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero__copy">
           <div class="hero__logo-stage" data-rise>
-            <img class="hero__logo hero__logo--stamp" src="./logo.svg" width="140" height="140" alt="Печать GM" />
+            <div class="stamp stamp--lg" aria-hidden="true">
+              <span class="stamp__glow"></span>
+              <svg class="stamp__svg" viewBox="0 0 200 200">
+                <defs>
+                  <path id="stampRingLg" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+                  <radialGradient id="stampCore" cx="50%" cy="45%" r="55%">
+                    <stop offset="0%" stop-color="#1c2418" />
+                    <stop offset="100%" stop-color="#10150f" />
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="97" fill="url(#stampCore)" />
+                <g class="stamp__spin">
+                  <circle cx="100" cy="100" r="91" fill="none" stroke="#E8FF6A" stroke-width="3.4" />
+                  <circle cx="100" cy="100" r="84" fill="none" stroke="#E8FF6A" stroke-width="1.5" stroke-dasharray="3 5" />
+                  <text class="stamp__ring-text" fill="#F4F0E4" font-size="11" font-weight="700" letter-spacing="3">
+                    <textPath href="#stampRingLg" data-i18n="stampRing">FRONTEND · UFA · GRIGOR MKRTCHYAN · </textPath>
+                  </text>
+                  <circle cx="100" cy="26" r="2.4" fill="#F0B429" />
+                  <circle cx="100" cy="174" r="2.4" fill="#F0B429" />
+                </g>
+                <circle cx="100" cy="100" r="58" fill="none" stroke="#F0B429" stroke-width="2.2" />
+                <text x="100" y="114" text-anchor="middle" class="stamp__gm" font-size="56" font-weight="800">GM</text>
+              </svg>
+            </div>
           </div>
-          <p class="hero__kicker" data-rise>Уфа · Frontend · Open to work</p>
+          <p class="hero__kicker" data-rise data-i18n="kicker">Уфа · Frontend · Open to work</p>
           <h1 class="hero__brand" data-rise>
-            <span>Григор</span>
-            <span class="hero__brand-accent">Мкртчян</span>
+            <span data-i18n="firstName">Григор</span>
+            <span class="hero__brand-accent" data-i18n="lastName">Мкртчян</span>
           </h1>
-          <p class="hero__lead" data-rise>
+          <p class="hero__lead" data-rise data-i18n="lead">
             Frontend-разработчик с фокусом на аккуратные интерфейсы, понятную архитектуру и быстрый UX.
           </p>
           <div class="hero__cta" data-rise>
-            <a class="btn btn--primary" href="#work">Смотреть работы</a>
-            <a class="btn btn--ghost" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a class="btn btn--primary" href="#work" data-i18n="ctaWork">Смотреть работы</a>
+            <a class="btn btn--ghost" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer" data-i18n="ctaTg">Telegram</a>
           </div>
         </div>
 
         <aside class="hero__panel" data-rise>
-          <img class="hero__photo" src="./assets/grigor.png" width="320" height="320" alt="Фото Григора Мкртчяна" />
-          <p class="hero__panel-label">Сейчас</p>
-          <p class="hero__panel-value">Open to work</p>
-          <p class="hero__panel-note">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
+          <div class="hero__photo-wrap">
+            <img class="hero__photo" src="./assets/grigor.png" width="320" height="320" data-i18n-alt="photoAlt" alt="Фото Григора Мкртчяна" />
+            <span class="hero__photo-frame" aria-hidden="true"></span>
+          </div>
+          <p class="hero__panel-label" data-i18n="nowLabel">Сейчас</p>
+          <p class="hero__panel-value" data-i18n="nowValue">Open to work</p>
+          <p class="hero__panel-note" data-i18n="nowNote">37 лет · Уфа, Россия · JavaScript / TypeScript / React</p>
         </aside>
       </section>
 
       <details class="fold" id="about">
         <summary class="fold__summary">
-          <span class="eyebrow">Обо мне</span>
-          <span class="fold__title">Кто я</span>
+          <span class="eyebrow" data-i18n="aboutEyebrow">Обо мне</span>
+          <span class="fold__title" data-i18n="aboutTitle">Кто я</span>
           <span class="fold__hint" aria-hidden="true"></span>
         </summary>
         <div class="fold__body about__grid">
           <div>
-            <p class="section-text">
+            <p class="section-text" data-i18n="aboutText">
               Собираю интерфейсы, которые ощущаются просто: от профессиональной вёрстки до сложных
               клиентских приложений на React. Люблю чистый UI, быстрый UX и код, который можно масштабировать.
             </p>
@@ -91,17 +140,17 @@
 };</code></pre>
           </div>
           <div class="about__facts">
-            <h3>Стек</h3>
+            <h3 data-i18n="stackTitle">Стек</h3>
             <ul>
               <li>TypeScript · React · Vite</li>
               <li>React Router · Redux Toolkit</li>
               <li>Axios · Leaflet</li>
               <li>HTML / CSS · JavaScript</li>
             </ul>
-            <h3>Ссылки</h3>
+            <h3 data-i18n="linksTitle">Ссылки</h3>
             <ul>
               <li><a href="https://github.com/GrigorMkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer">Резюме HTML Academy</a></li>
+              <li><a href="https://career.htmlacademy.ru/resume" target="_blank" rel="noopener noreferrer" data-i18n="resume">Резюме HTML Academy</a></li>
               <li><a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram @Grigormk</a></li>
             </ul>
           </div>
@@ -110,43 +159,43 @@
 
       <details class="fold" id="certs">
         <summary class="fold__summary">
-          <span class="eyebrow">HTML Academy</span>
-          <span class="fold__title">Сертификаты</span>
+          <span class="eyebrow" data-i18n="certsEyebrow">HTML Academy</span>
+          <span class="fold__title" data-i18n="certsTitle">Сертификаты</span>
           <span class="fold__hint" aria-hidden="true"></span>
         </summary>
         <div class="fold__body">
-          <p class="section-text certs__intro">
+          <p class="section-text certs__intro" data-i18n="certsIntro">
             Пять сертификатов профессии фронтенд-разработчика — от вёрстки до React.
           </p>
           <div class="certs__grid">
             <a class="cert" href="./assets/certificates/html-css-professional-layout.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/html-css-professional-layout.png" alt="Сертификат HTML и CSS" loading="lazy" />
-              <span>HTML и CSS. Профессиональная вёрстка сайтов</span>
+              <img src="./assets/certificates/html-css-professional-layout.png" alt="" loading="lazy" />
+              <span data-i18n="cert1">HTML и CSS. Профессиональная вёрстка сайтов</span>
             </a>
             <a class="cert" href="./assets/certificates/javascript-professional-web-interfaces.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="Сертификат JavaScript интерфейсы" loading="lazy" />
-              <span>JavaScript. Профессиональная разработка веб-интерфейсов</span>
+              <img src="./assets/certificates/javascript-professional-web-interfaces.png" alt="" loading="lazy" />
+              <span data-i18n="cert2">JavaScript. Профессиональная разработка веб-интерфейсов</span>
             </a>
             <a class="cert" href="./assets/certificates/javascript-client-app-architecture.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/javascript-client-app-architecture.png" alt="Сертификат архитектура JS" loading="lazy" />
-              <span>JavaScript. Архитектура клиентских приложений</span>
+              <img src="./assets/certificates/javascript-client-app-architecture.png" alt="" loading="lazy" />
+              <span data-i18n="cert3">JavaScript. Архитектура клиентских приложений</span>
             </a>
             <a class="cert" href="./assets/certificates/react-complex-client-apps.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/react-complex-client-apps.png" alt="Сертификат React" loading="lazy" />
-              <span>React. Разработка сложных клиентских приложений</span>
+              <img src="./assets/certificates/react-complex-client-apps.png" alt="" loading="lazy" />
+              <span data-i18n="cert4">React. Разработка сложных клиентских приложений</span>
             </a>
             <a class="cert cert--wide" href="./assets/certificates/frontend-developer-profession.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/certificates/frontend-developer-profession.png" alt="Сертификат профессии фронтенд" loading="lazy" />
-              <span>Профессия «Фронтенд-разработчик»</span>
+              <img src="./assets/certificates/frontend-developer-profession.png" alt="" loading="lazy" />
+              <span data-i18n="cert5">Профессия «Фронтенд-разработчик»</span>
             </a>
           </div>
         </div>
       </details>
 
       <section class="path" id="path">
-        <p class="eyebrow">Путь</p>
-        <h2 class="section-title">По мере разработки</h2>
-        <p class="section-text">
+        <p class="eyebrow" data-i18n="pathEyebrow">Путь</p>
+        <h2 class="section-title" data-i18n="pathTitle">По мере разработки</h2>
+        <p class="section-text" data-i18n="pathText">
           Восемь проектов ниже — в хронологии создания репозиториев. От Sedona до Rock Ufa.
         </p>
         <div class="timeline-scale" aria-hidden="true">
@@ -162,123 +211,123 @@
         <article class="project" data-reveal>
           <div class="project__meta">
             <div class="project__index">01</div>
-            <time datetime="2025-04">апр 2025</time>
+            <time datetime="2025-04" data-i18n="p1time">апр 2025</time>
             <h3>Sedona</h3>
-            <p>Адаптивный лендинг города. Сетка, БЭМ, пиксель-перфект по макету HTML Academy.</p>
+            <p data-i18n="p1desc">Адаптивный лендинг города. Сетка, БЭМ, пиксель-перфект по макету HTML Academy.</p>
             <p class="project__stack">HTML · CSS · Adaptive</p>
-            <a class="project__link" href="https://grigormkr.github.io/2552419-sedona-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-sedona-2/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/2552419-sedona-2/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/sedona.jpg" alt="Скриншот сайта Sedona" width="1440" height="900" loading="eager" />
+            <img src="./shots/sedona.jpg" alt="Sedona" width="1440" height="900" loading="eager" />
           </a>
         </article>
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
             <div class="project__index">02</div>
-            <time datetime="2025-07">июл 2025</time>
+            <time datetime="2025-07" data-i18n="p2time">июл 2025</time>
             <h3>Kekstagram</h3>
-            <p>Фотосервис: загрузка, фильтры, сортировка ленты и модальные окна на чистом JS.</p>
+            <p data-i18n="p2desc">Фотосервис: загрузка, фильтры, сортировка ленты и модальные окна на чистом JS.</p>
             <p class="project__stack">JavaScript · DOM · Webpack</p>
-            <a class="project__link" href="https://grigormkr.github.io/2552419-kekstagram-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-kekstagram-2/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/2552419-kekstagram-2/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/kekstagram.jpg" alt="Скриншот Kekstagram" width="1440" height="900" loading="lazy" />
+            <img src="./shots/kekstagram.jpg" alt="Kekstagram" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project" data-reveal>
           <div class="project__meta">
             <div class="project__index">03</div>
-            <time datetime="2025-09">сен 2025</time>
+            <time datetime="2025-09" data-i18n="p3time">сен 2025</time>
             <h3>Big Trip</h3>
-            <p>Планировщик путешествий: точки маршрута, офферы, фильтры и подсчёт бюджета.</p>
+            <p data-i18n="p3desc">Планировщик путешествий: точки маршрута, офферы, фильтры и подсчёт бюджета.</p>
             <p class="project__stack">JavaScript · MVP · SPA</p>
-            <a class="project__link" href="https://grigormkr.github.io/2552419-big-trip-2/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-big-trip-2/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/2552419-big-trip-2/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/big-trip.jpg" alt="Скриншот Big Trip" width="1440" height="900" loading="lazy" />
+            <img src="./shots/big-trip.jpg" alt="Big Trip" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
             <div class="project__index">04</div>
-            <time datetime="2025-11">ноя 2025</time>
+            <time datetime="2025-11" data-i18n="p4time">ноя 2025</time>
             <h3>Six Cities</h3>
-            <p>Каталог жилья с картой, сортировкой и авторизацией. React и TypeScript.</p>
+            <p data-i18n="p4desc">Каталог жилья с картой, сортировкой и авторизацией. React и TypeScript.</p>
             <p class="project__stack">React · TypeScript · Leaflet</p>
-            <a class="project__link" href="https://grigormkr.github.io/2552419-six-cities-3/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/2552419-six-cities-3/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/2552419-six-cities-3/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/six-cities.jpg" alt="Скриншот Six Cities" width="1440" height="900" loading="lazy" />
+            <img src="./shots/six-cities.jpg" alt="Six Cities" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project" data-reveal>
           <div class="project__meta">
             <div class="project__index">05</div>
-            <time datetime="2026-04">апр 2026</time>
+            <time datetime="2026-04" data-i18n="p5time">апр 2026</time>
             <h3>Mishka / Spreent</h3>
-            <p>Маркетинговый лендинг образовательной платформы: hero, типографика, анимации.</p>
+            <p data-i18n="p5desc">Маркетинговый лендинг образовательной платформы: hero, типографика, анимации.</p>
             <p class="project__stack">HTML · CSS · Landing</p>
-            <a class="project__link" href="https://grigormkr.github.io/mish-academia-/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/mish-academia-/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/mish-academia-/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/mishka.jpg" alt="Скриншот Spreent" width="1440" height="900" loading="lazy" />
+            <img src="./shots/mishka.jpg" alt="Spreent" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
             <div class="project__index">06</div>
-            <time datetime="2026-04">апр 2026</time>
+            <time datetime="2026-04" data-i18n="p6time">апр 2026</time>
             <h3>Escape Room</h3>
-            <p>Каталог квестов Петербурга: фильтры по жанру и сложности, карточки и запись.</p>
+            <p data-i18n="p6desc">Каталог квестов Петербурга: фильтры по жанру и сложности, карточки и запись.</p>
             <p class="project__stack">React · Vite · SPA</p>
-            <a class="project__link" href="https://grigormkr.github.io/escape-room-vite/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/escape-room-vite/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/escape-room-vite/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/escape-room.jpg" alt="Скриншот Escape Room" width="1440" height="900" loading="lazy" />
+            <img src="./shots/escape-room.jpg" alt="Escape Room" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project" data-reveal>
           <div class="project__meta">
             <div class="project__index">07</div>
-            <time datetime="2026-06">июн 2026</time>
+            <time datetime="2026-06" data-i18n="p7time">июн 2026</time>
             <h3>NagaevoMaster</h3>
-            <p>Портал посёлка: услуги, доска объявлений, форум, новости и личный кабинет.</p>
+            <p data-i18n="p7desc">Портал посёлка: услуги, доска объявлений, форум, новости и личный кабинет.</p>
             <p class="project__stack">React · TypeScript · Vite</p>
-            <a class="project__link" href="https://grigormkr.github.io/NagaevoMaster/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/NagaevoMaster/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/NagaevoMaster/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/nagaevo.jpg" alt="Скриншот NagaevoMaster" width="1440" height="900" loading="lazy" />
+            <img src="./shots/nagaevo.jpg" alt="NagaevoMaster" width="1440" height="900" loading="lazy" />
           </a>
         </article>
 
         <article class="project project--flip" data-reveal>
           <div class="project__meta">
             <div class="project__index">08</div>
-            <time datetime="2026-07">июл 2026</time>
+            <time datetime="2026-07" data-i18n="p8time">июл 2026</time>
             <h3>Rock Ufa</h3>
-            <p>Рок-портал Уфы с 2005: афиша, медиа, сцена и сообщество в тёмной сценографии.</p>
+            <p data-i18n="p8desc">Рок-портал Уфы с 2005: афиша, медиа, сцена и сообщество в тёмной сценографии.</p>
             <p class="project__stack">TypeScript · React · Vite</p>
-            <a class="project__link" href="https://grigormkr.github.io/Rock-Ufa02/" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
+            <a class="project__link" href="https://grigormkr.github.io/Rock-Ufa02/" target="_blank" rel="noopener noreferrer" data-i18n="openSite">Открыть сайт</a>
           </div>
           <a class="project__shot" href="https://grigormkr.github.io/Rock-Ufa02/" target="_blank" rel="noopener noreferrer">
-            <img src="./shots/rock-ufa.jpg" alt="Скриншот Rock Ufa" width="1440" height="900" loading="lazy" />
+            <img src="./shots/rock-ufa.jpg" alt="Rock Ufa" width="1440" height="900" loading="lazy" />
           </a>
         </article>
       </section>
 
       <section class="contact" id="contact">
-        <p class="eyebrow">Связь</p>
-        <h2 class="section-title">Контакты</h2>
-        <p class="section-text">Можно написать в Telegram или позвонить.</p>
+        <p class="eyebrow" data-i18n="contactEyebrow">Связь</p>
+        <h2 class="section-title" data-i18n="contactTitle">Контакты</h2>
+        <p class="section-text" data-i18n="contactText">Можно написать в Telegram или позвонить.</p>
         <div class="contact__row">
           <a class="contact__item" href="tel:+79871484032">
-            <span class="contact__label">Телефон</span>
+            <span class="contact__label" data-i18n="phone">Телефон</span>
             <span class="contact__value">+7 987 148-40-32</span>
           </a>
           <a class="contact__item" href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">
@@ -295,16 +344,30 @@
 
     <footer class="footer">
       <div class="footer__brand-row">
-        <img src="./logo.svg" width="48" height="48" alt="GM" />
+        <span class="stamp stamp--sm" aria-hidden="true">
+          <svg class="stamp__svg" viewBox="0 0 200 200">
+            <defs>
+              <path id="stampRingFt" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="#141a14" />
+            <g class="stamp__spin">
+              <circle cx="100" cy="100" r="90" fill="none" stroke="#E8FF6A" stroke-width="3" />
+              <text class="stamp__ring-text" fill="#F4F0E4" font-size="10.5" font-weight="700" letter-spacing="2.8">
+                <textPath href="#stampRingFt" data-i18n="stampRing">FRONTEND · UFA · GRIGOR MKRTCHYAN · </textPath>
+              </text>
+            </g>
+            <text x="100" y="112" text-anchor="middle" class="stamp__gm" font-size="48" font-weight="800">GM</text>
+          </svg>
+        </span>
         <div>
-          <p class="footer__brand">Григор Мкртчян</p>
-          <p class="footer__note">Frontend developer · Уфа</p>
+          <p class="footer__brand"><span data-i18n="firstName">Григор</span> <span data-i18n="lastName">Мкртчян</span></p>
+          <p class="footer__note" data-i18n="footerNote">Frontend developer · Уфа</p>
         </div>
       </div>
       <div class="footer__links">
         <a href="tel:+79871484032">+7 987 148-40-32</a>
         <a href="https://t.me/Grigormk" target="_blank" rel="noopener noreferrer">Telegram</a>
-        <a href="#work">Работы</a>
+        <a href="#work" data-i18n="footerWork">Работы</a>
       </div>
     </footer>
 
