@@ -7,8 +7,8 @@
   --accent-2: #0f9f8a;
   --accent-soft: rgba(47, 111, 237, 0.12);
   --panel: rgba(255, 255, 255, 0.78);
-  --font-display: "Loos Condensed", "Loos Normal", "Noto Sans Armenian", sans-serif;
-  --font-body: "Manrope", "Noto Sans Armenian", system-ui, sans-serif;
+  --font-display: "Sora", "Noto Sans Armenian", sans-serif;
+  --font-body: "Figtree", "Noto Sans Armenian", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --pad: clamp(1.25rem, 4vw, 3.75rem);
 }
@@ -52,7 +52,7 @@ a {
 :lang(hy) .fold__title,
 :lang(hy) .section-title,
 :lang(hy) .footer__brand {
-  font-family: "Noto Sans Armenian", "Manrope", sans-serif;
+  font-family: "Noto Sans Armenian", "Figtree", sans-serif;
 }
 
 :lang(hy) .hero__brand,
@@ -60,7 +60,7 @@ a {
 :lang(hy) .section-title,
 :lang(hy) .footer__brand,
 :lang(hy) .logo__name {
-  font-family: "Noto Sans Armenian", "Loos Condensed", sans-serif;
+  font-family: "Noto Sans Armenian", "Sora", sans-serif;
   letter-spacing: 0;
 }
 
@@ -153,12 +153,12 @@ a {
 
 .stamp__gm {
   fill: #f7f9fc;
-  font-family: "Loos Normal", var(--font-display);
+  font-family: var(--font-display);
   letter-spacing: 0.04em;
 }
 
 .stamp__arc {
-  font-family: "Loos Condensed", "Manrope", var(--font-body);
+  font-family: var(--font-display);
   text-transform: uppercase;
 }
 

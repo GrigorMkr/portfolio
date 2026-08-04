@@ -6,12 +6,12 @@
     <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="24s" repeatCount="indefinite"/>
     <path id="logoTop" d="M30,100 A70,70 0 0,0 170,100" fill="none"/>
     <path id="logoBot" d="M170,100 A70,70 0 0,0 30,100" fill="none"/>
-    <text fill="#f7f9fc" font-family="Loos Condensed, sans-serif" font-size="14" font-weight="700" letter-spacing="3">
+    <text fill="#f7f9fc" font-family="Sora, sans-serif" font-size="14" font-weight="700" letter-spacing="3">
       <textPath href="#logoTop" startOffset="50%" text-anchor="middle">МКРТЧЯН</textPath>
     </text>
-    <text fill="#f7f9fc" font-family="Loos Condensed, sans-serif" font-size="13" font-weight="700" letter-spacing="3.5">
+    <text fill="#f7f9fc" font-family="Sora, sans-serif" font-size="13" font-weight="700" letter-spacing="3.5">
       <textPath href="#logoBot" startOffset="50%" text-anchor="middle">FRONTEND</textPath>
     </text>
   </g>
-  <text x="100" y="116" text-anchor="middle" fill="#f7f9fc" font-family="Loos Normal, sans-serif" font-size="50" font-weight="800">GM</text>
+  <text x="100" y="116" text-anchor="middle" fill="#f7f9fc" font-family="Sora, sans-serif" font-size="50" font-weight="800">GM</text>
 </svg>
